@@ -1,0 +1,10 @@
+{
+    "etestApp": {
+        "FunctionType" : {
+            "null": "",
+            "INPUT": "INPUT",
+            "VERIFICATION": "VERIFICATION",
+            "EVENT": "EVENT"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "etestApp": {
+        "TestScreenInputDataType" : {
+            "null": "",
+            "CONSTANT": "CONSTANT",
+            "PARAMETER": "PARAMETER",
+            "FUNCTION": "FUNCTION"
+        }
+    }
+}

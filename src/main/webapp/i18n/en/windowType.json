@@ -1,0 +1,9 @@
+{
+    "etest": {
+        "WindowType" : {
+            "null": "",
+            "MAIN": "Main Window",
+            "POPUP": "Popup Window"
+        }
+    }
+}

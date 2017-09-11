@@ -1,0 +1,10 @@
+{
+    "etestApp": {
+        "TestStepItemType" : {
+            "null": "",
+            "INPUT": "INPUT",
+            "ACTION": "ACTION",
+            "CHECKPOINT": "CHECKPOINT"
+        }
+    }
+}

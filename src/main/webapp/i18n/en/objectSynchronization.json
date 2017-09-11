@@ -1,0 +1,11 @@
+{
+    "etest": {
+        "objectSynchronization" : {
+            "strategy": "Strategy",
+            "waitForObjectId": "Wait For Object",
+            "waitForProperty": "Wait For Property",
+            "waitForValue": "Wait For Value",
+            "timeout": "Timeout (sec)"
+        }
+    }
+}

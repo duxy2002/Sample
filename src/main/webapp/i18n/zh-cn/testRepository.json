@@ -1,0 +1,32 @@
+{
+    "etest": {
+        "testRepository" : {
+            "home": {
+                "toolbar": "管理测试对象库",
+                "title": "测试对象库列表",
+                "createLabel": "创建测试对象库",
+                "createOrEditLabel": "创建或编辑测试对象库"
+            },
+            "created": "创建了测试对象库 {{ name }}",
+            "updated": "更新了测试对象库 {{ name }}",
+            "deleted": "删除了测试对象库 {{ name }}",
+            "delete": {
+                "question": "您确认要删除测试对象库 {{ name }} 吗？"
+            },
+            "detail": {
+                "title": "测试对象库详细"
+            },
+            "name": "对象库名",
+            "description": "说明",
+            "repositoryModules": "对象库模块名",
+            "type": "对象库类型",
+            "count": "对象库模块数量",
+            "project": "项目",
+            "actions": {
+                "view": "查看对象库模块",
+                "import": "导入对象库模块定义",
+                "export": "导出对象库模块定义"
+            }
+        }
+    }
+}

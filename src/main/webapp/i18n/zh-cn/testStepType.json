@@ -1,0 +1,12 @@
+{
+    "etest": {
+        "TestStepType": {
+            "null": "",
+            "UI": "画面",
+            "API": "接口",
+            "DB": "数据库",
+            "FILE": "文件",
+            "SCRIPT": "脚本"
+        }
+    }
+}

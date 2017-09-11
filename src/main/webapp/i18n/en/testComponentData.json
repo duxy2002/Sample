@@ -1,0 +1,25 @@
+{
+    "etestApp": {
+        "testComponentData" : {
+            "home": {
+                "title": "Test Component Data",
+                "createLabel": "Create a new Test Component Data",
+                "createOrEditLabel": "Create or edit a Test Component Data"
+            },
+            "created": "A new Test Component Data is created with identifier {{ param }}",
+            "updated": "A Test Component Data is updated with identifier {{ param }}",
+            "deleted": "A Test Component Data is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Test Component Data {{ id }}?"
+            },
+            "detail": {
+                "title": "Test Component Data"
+            },
+            "name": "Name",
+            "description": "Description",
+            "parameters": "Parameters",
+            "testDataPattern": "Test Data Pattern",
+            "testComponent": "Test Component"
+        }
+    }
+}

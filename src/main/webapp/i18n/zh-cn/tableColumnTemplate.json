@@ -1,0 +1,24 @@
+{
+    "etestApp": {
+        "tableColumnTemplate" : {
+            "home": {
+                "title": "Table Column Templates",
+                "createLabel": "Create a new Table Column Template",
+                "createOrEditLabel": "Create or edit a Table Column Template"
+            },
+            "created": "A new Table Column Template is created with identifier {{ param }}",
+            "updated": "A Table Column Template is updated with identifier {{ param }}",
+            "deleted": "A Table Column Template is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Table Column Template {{ id }}?"
+            },
+            "detail": {
+                "title": "Table Column Template"
+            },
+            "name": "Name",
+            "rowOffset": "Row Offset",
+            "columnIndex": "Column Index",
+            "tableTemplate": "Table Template"
+        }
+    }
+}

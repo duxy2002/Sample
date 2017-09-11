@@ -1,0 +1,57 @@
+{
+    "etest": {
+        "testComponent" : {
+            "home": {
+                "toolbar": "Manage Test Components",
+                "title": "Test Component List",
+                "createLabel": "Create a new Test Component",
+                "createOrEditLabel": "Create or edit a Test Component"
+            },
+            "created": "A new Test Component is created with identifier {{ name }}",
+            "updated": "A Test Component is updated with identifier {{ name }}",
+            "deleted": "A Test Component is deleted with identifier {{ name }}",
+            "delete": {
+                "question": "Are you sure you want to delete Test Component - {{ name }}?"
+            },
+            "detail": {
+                "title": "Test Component"
+            },
+            "category": "Category",
+            "name": "Name",
+            "type": "Type",
+            "description": "Description",
+            "testComponentDatas": "Test Component Data",
+            "testScript": "Test Component Script",
+            "testSteps": "Test Component Steps",
+            "parameters": "Test Component Parameters",
+            "tabs": {
+                "basic": {
+                    "title": "Basic Information",
+                    "new": "New Test Component"
+                },
+                "step": {
+                    "title": "Test Step",
+                    "add": "Start to add test steps",
+                    "new": "New Test Step",
+                    "none": "No test step has been created"
+                },
+                "data": {
+                    "title": "Test Data",
+                    "add": "Start to add test data",
+                    "new": "New Test Data",
+                    "none": "No test data has been created"
+                },
+                "parameter": {
+                    "title": "Parameter Definition",
+                    "none": "No parameter has been defined",
+                    "category": "Category",
+                    "name": "Name",
+                    "type": "Type",
+                    "validatePattern": "Validate Pattern",
+                    "defaultValue": "Default Value",
+                    "description": "Description"
+                }
+            }
+        }
+    }
+}

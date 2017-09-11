@@ -1,0 +1,41 @@
+{
+    "etest": {
+        "dataList" : {
+            "home": {
+                "toolbar": "Manage Data Lists",
+                "title": "Data List",
+                "createLabel": "Create a new Data List",
+                "createOrEditLabel": "Create or edit a Data List"
+            },
+            "created": "A new Data List is created with identifier {{ name }}",
+            "updated": "A Data List is updated with identifier {{ name }}",
+            "deleted": "A Data List is deleted with identifier {{ name }}",
+            "delete": {
+                "question": "Are you sure you want to delete Data List - {{ name }}?"
+            },
+            "detail": {
+                "title": "Data List"
+            },
+            "name": "Name",
+            "value":"Value",
+            "scope": "Scope",
+            "label": "Label",
+            "description": "Description",
+            "enabled": "Enabled",
+            "applicableScope": "Applicable Scope",
+            "screenElementObjectType": "Object Type",
+            "displaythelabel": "Display the label",
+            "tabs": {
+                "basic":"Basic Information",
+                "item": {
+                    "title":"Items Definition",
+                    "none": "No Items has been defined",
+                    "value": "Value",
+                    "label": "Label",
+                    "enabled": "Enabled",
+                    "description": "Description"
+                }
+            }
+        }
+    }
+}

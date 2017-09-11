@@ -1,0 +1,24 @@
+{
+    "etestApp": {
+        "testCaseItemOrder" : {
+            "home": {
+                "title": "Test Case Item Orders",
+                "createLabel": "Create a new Test Case Item Order",
+                "createOrEditLabel": "Create or edit a Test Case Item Order"
+            },
+            "created": "A new Test Case Item Order is created with identifier {{ param }}",
+            "updated": "A Test Case Item Order is updated with identifier {{ param }}",
+            "deleted": "A Test Case Item Order is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Test Case Item Order {{ id }}?"
+            },
+            "detail": {
+                "title": "Test Case Item Order"
+            },
+            "itemType": "Item Type",
+            "itemId": "Item Id",
+            "itemOrder": "Item Order",
+            "testCase": "Test Case"
+        }
+    }
+}

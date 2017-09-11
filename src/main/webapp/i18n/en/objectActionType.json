@@ -1,0 +1,9 @@
+{
+    "etest": {
+        "ObjectActionType" : {
+            "null": "",
+            "INPUT": "Data Input",
+            "ACTION": "Event Action"
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "etest": {
+        "testCaseResult" : {
+            "home": {
+                "toolbar": "执行结果",
+                "title": "测试场景详细执行结果",
+                "createLabel": "Create a new Test Case Result",
+                "createOrEditLabel": "Create or edit a Test Case Result"
+            },
+            "created": "A new Test Case Result is created with identifier {{ param }}",
+            "updated": "A Test Case Result is updated with identifier {{ param }}",
+            "deleted": "A Test Case Result is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Test Case Result {{ id }}?"
+            },
+            "detail": {
+                "title": "Test Case Result"
+            },
+            "name": "Name",
+            "startTime": "Start Time",
+            "endTime": "End Time",
+            "duration": "Duration",
+            "result": "Result",
+            "error": "Error",
+            "testCase": "Test Case",
+            "dataPattern": "Data Pattern",
+            "testStepResults": "Test Step Results",
+            "testScenarioResult": "Test Scenario Result"
+        }
+    }
+}

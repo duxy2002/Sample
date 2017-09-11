@@ -1,0 +1,12 @@
+{
+    "etest": {
+        "TestStepType": {
+            "null": "",
+            "UI": "UI",
+            "API": "API",
+            "DB": "Database",
+            "FILE": "File",
+            "SCRIPT": "Script"
+        }
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "etest": {
+        "testExecutionSchedule" : {
+            "home": {
+                "toolbar": "Manage Test Execution Schedules",
+                "title": "Test Execution Schedules",
+                "createLabel": "Create a new Test Execution Schedule",
+                "createOrEditLabel": "Create or edit a Test Execution Schedule"
+            },
+            "created": "A new Test Execution Schedule is created with identifier {{ name }}",
+            "updated": "A Test Execution Schedule is updated with identifier {{ name }}",
+            "deleted": "A Test Execution Schedule is deleted with identifier {{ name }}",
+            "delete": {
+                "question": "Are you sure you want to delete Test Execution Schedule {{ id }}?"
+            },
+            "detail": {
+                "title": "Test Execution Schedule",
+                "name": "Test Execution Schedule Name"
+            },
+            "name": "Name",
+            "description": "Description",
+            "status": {
+                "name": "Status",
+                "inPlan": "IN_PLAN",
+                "executed": "EXECUTED",
+                "canceled": "CANCELED",
+                "closed": "CLOSED"
+            },
+            "strategy": {
+                "name": "Strategy",
+                "timerDriven": "TIMER_DRIVEN",
+                "cronDriven": "CRON_DRIVEN"
+            },
+            "navs": {
+                "testExecutionSet": {
+                    "title": "Test Execution Set List",
+                    "searchByName": "Search By Name"
+                }
+            },
+            "tabs": {
+                "basic": {
+                    "title": "Basic Information"
+                },
+                "strategy": {
+                    "title": "Design Execution Strategy",
+                    "chooseDate": "Choose a Date",
+                    "date": "Date",
+                    "time": "Time",
+                    "hour": "Hour",
+                    "hours": "Hours",
+                    "minute": "Minute",
+                    "minutes": "Minutes",
+                    "day": "day",
+                    "month": "month",
+                    "week": "week",
+                    "startDate": "Start Date",
+                    "endDate": "End Date",
+                    "statement1": "starting at ",
+                    "statement2": "",
+                    "statement3": "Every",
+                    "statement4": "",
+                    "circle": "Circle",
+                    "specification": "Specification",
+                    "everyDay": "Every day",
+                    "everyMonth": "Every month",
+                    "everyWeek": "Every week"
+                },
+                "executionSet": {
+                    "title": "Design Test Execution Set",
+                    "show": "show test execution sets selection panel",
+                    "hide": "hide test execution sets selection panel",
+                    "none": "No test execution sets has been selected"
+                }
+            },
+            "executionSchedule": "Execution Schedule",
+            "testExecutionHistories": "Test Execution Histories",
+            "project": "Project",
+            "testExecutionSet": "Test Execution Set"
+        }
+    }
+}

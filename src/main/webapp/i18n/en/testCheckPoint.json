@@ -1,0 +1,29 @@
+{
+    "etest": {
+        "testCheckPoint" : {
+            "home": {
+                "toolbar": "Manage Test Check Points",
+                "title": "Test Check Point List",
+                "createLabel": "Create a new Test Check Point",
+                "createOrEditLabel": "Create or edit a Test Check Point"
+            },
+            "created": "A new Test Check Point is created with identifier {{ name }}",
+            "updated": "A Test Check Point is updated with identifier {{ name }}",
+            "deleted": "A Test Check Point is deleted with identifier {{ name }}",
+            "delete": {
+                "question": "Are you sure you want to delete Test Check Point - {{ name }}?"
+            },
+            "detail": {
+                "title": "Add Verify Data for End Screen"
+            },
+            "element": "UI Element",
+            "property": "Property",
+            "assertType": "Assert Type",
+            "assertMatchMode": "Match Mode",
+            "breakOnFail": "Break On Fail",
+            "parameters": "Parameters",
+            "value": "Verify Value",
+            "dataReset": "Check point data has been reset because end screen changed"
+        }
+    }
+}

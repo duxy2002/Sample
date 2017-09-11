@@ -1,0 +1,32 @@
+{
+    "etest": {
+        "testStepResult" : {
+            "home": {
+                "title": "Test Step Results",
+                "createLabel": "Create a new Test Step Result",
+                "createOrEditLabel": "Create or edit a Test Step Result"
+            },
+            "created": "A new Test Step Result is created with identifier {{ param }}",
+            "updated": "A Test Step Result is updated with identifier {{ param }}",
+            "deleted": "A Test Step Result is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Test Step Result {{ id }}?"
+            },
+            "detail": {
+                "title": "Test Step Result"
+            },
+            "name": "Name",
+            "step": "Step",
+            "startTime": "Start Time",
+            "endTime": "End Time",
+            "duration": "Duration",
+            "inputScreenshotPath": "Input Screenshot Path",
+            "verificationScreenshotPath": "Verification Screenshot Path",
+            "result": "Result",
+            "error": "Error",
+            "testStep": "Test Step",
+            "testStepItemResults": "Test Step Item Results",
+            "testCaseResult": "Test Case Result"
+        }
+    }
+}

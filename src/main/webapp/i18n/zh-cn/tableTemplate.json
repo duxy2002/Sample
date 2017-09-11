@@ -1,0 +1,27 @@
+{
+    "etestApp": {
+        "tableTemplate" : {
+            "home": {
+                "title": "Table Templates",
+                "createLabel": "Create a new Table Template",
+                "createOrEditLabel": "Create or edit a Table Template"
+            },
+            "created": "A new Table Template is created with identifier {{ param }}",
+            "updated": "A Table Template is updated with identifier {{ param }}",
+            "deleted": "A Table Template is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Table Template {{ id }}?"
+            },
+            "detail": {
+                "title": "Table Template"
+            },
+            "name": "Name",
+            "description": "Description",
+            "headerStartRow": "Header Start Row",
+            "headerRowSpan": "Header Row Span",
+            "dataStartRow": "Data Start Row",
+            "dataRowSpan": "Data Row Span",
+            "tableColumnTemplates": "Table Column Templates"
+        }
+    }
+}

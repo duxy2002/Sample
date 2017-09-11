@@ -1,0 +1,25 @@
+{
+    "etest": {
+        "testStepData" : {
+            "home": {
+                "toolbar": "管理测试步骤数据",
+                "title": "测试步骤数据列表",
+                "createLabel": "创建测试步骤数据",
+                "createOrEditLabel": "创建或编辑测试步骤数据"
+            },
+            "created": "创建了测试步骤数据 {{ name }}",
+            "updated": "更新了测试步骤数据 {{ name }}",
+            "deleted": "删除了测试步骤数据 {{ name }}",
+            "delete": {
+                "question": "您确认要删除测试步骤数据 {{ name }} 吗？"
+            },
+            "detail": {
+                "title": "测试步骤数据"
+            },
+            "condition": {
+                "uiInput": "设置画面输入数据之前，请先选择开始画面。",
+                "uiVerify": "设置画面验证数据之前，请先选择结束画面。"
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "etest": {
+        "Priority": {
+            "null": "",
+            "HIGH": "High",
+            "MID": "Mid",
+            "LOW": "Low"
+        }
+    }
+}

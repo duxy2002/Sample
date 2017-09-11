@@ -1,0 +1,11 @@
+{
+    "etest": {
+        "elementIdentification" : {
+            "framePath": "画面对象框路径",
+            "strategy": "识别策略",
+            "identifier": "识别值",
+            "index": "识别索引",
+            "smartIdentify": "智能识别"
+        }
+    }
+}

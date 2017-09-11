@@ -1,0 +1,21 @@
+{
+    "etest": {
+        "testStepAction" : {
+            "module": "Repository Module",
+            "startScreen": "Start Screen",
+            "endScreen": "End Screen",
+            "screenName": "Screen Name",
+            "action": "Transition Action",
+            "actionTarget": "Action Target",
+            "actionEvent": "Action Event",
+            "actionParameterName": "Parameter Name",
+            "actionParameterValue": "Parameter Value",
+            "executionParameter": "Execution Parameter",
+            "waitAfterAction": "Force wait time in seconds after action on start screen finished",
+            "waitAfterStep": "Force wait time in seconds after end screen has been loaded finished",
+            "condition": {
+                "module": "Please define object repository module first before test step design"
+            }
+        }
+    }
+}

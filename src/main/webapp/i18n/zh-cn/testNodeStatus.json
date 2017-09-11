@@ -1,0 +1,10 @@
+{
+    "etestApp": {
+        "TestNodeStatus" : {
+            "null": "",
+            "AVAILABLE": "AVAILABLE",
+            "UNAVAILABLE": "UNAVAILABLE",
+            "UNKNOWN": "UNKNOWN"
+        }
+    }
+}

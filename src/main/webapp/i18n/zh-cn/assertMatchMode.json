@@ -1,0 +1,11 @@
+{
+    "etest": {
+        "AssertMatchMode" : {
+            "null": "",
+            "GLOB": "GLOB模式",
+            "REGEXP": "标准正则模式",
+            "REGEXPI": "忽略大小写正则模式",
+            "EXACT": "精确匹配期待值"
+        }
+    }
+}

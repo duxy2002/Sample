@@ -1,0 +1,98 @@
+{
+    "etest": {
+        "testExecutionSet" : {
+            "home": {
+                "toolbar": "管理测试执行设定",
+                "title": "测试执行设定列表",
+                "createLabel": "创建测试执行设定",
+                "createOrEditLabel": "创建或编辑测试执行设定"
+            },
+            "tabs": {
+                "basic": "基本设定",
+                "environment": {
+                    "title": "执行环境",
+                    "add": "添加执行环境",
+                    "hide": "隐藏测试执行环境面板",
+                    "none": "还没有创建测试执行环境"
+                },
+                "executionScenario": {
+                    "title": "执行场景",
+                    "add": "开始添加测试执行场景",
+                    "hide": "隐藏测试执行场景面板",
+                    "none": "还没有创建测试执行场景"
+                },
+                "parameter": {
+                    "title": "测试参数设定",
+                    "panelTitle": "创建或编辑测试参数设定",
+                    "parameterName": "参数",
+                    "parameterValue": "参数值"
+                }
+            },
+            "navs": {
+                "environment": "测试执行环境",
+                "testScenario": {
+                    "title": "测试场景列表",
+                    "searchByName": "通过名称检索",
+                    "searchByTag": "通过标签检索"
+                },
+                "executionScenario": {
+                    "title": "测试场景执行设定",
+                    "tabs": {
+                        "basicInfo": "基本设定",
+                        "testScenario": "测试场景",
+                        "dataPattern": "测试用例数据样式设定"
+                    }
+                }
+            },
+            "created": "创建了测试执行设定 {{ name }}",
+            "updated": "更新了测试执行设定 {{ name }}",
+            "deleted": "删除了测试执行设定 {{ name }}",
+            "delete": {
+                "question": "你确认要删除测试执行设定 {{ name }} 吗？"
+            },
+            "detail": {
+                "title": "测试执行设定",
+                "name": "测试设定执行名称"
+            },
+            "name": "测试执行设定名称",
+            "description": "说明",
+            "baseURL": "测试目标应用访问URL",
+            "browserNavigationTimeout": "页面跳转超时时间(秒)",
+            "objectSynchronizationTimeout": "画面元素对象定位超时时间（秒）",
+            "parallelExecutionMode": "并行执行模式",
+            "testExecutionHistories": "测试执行履历",
+            "dataCapture": "数据获取",
+            "silentMode":  "静默模式",
+            "screenshotMode": {
+                "title": "在以下情况自动截取画面截屏作为测试证据：",
+                "TESTSTEP": "测试步骤",
+                "TESTACTION": "每个测试动作执行时",
+                "TESTACTION_ON_ERROR": "测试动作执行出错时",
+                "TESTSTEP_ON_ERROR": "测试步骤错误"
+            },
+            "project": "项目",
+            "environments": "环境",
+            "scenarios": "测试场景",
+            "parameters": "测试参数",
+            "selected": {
+                "count": "选择了{{ count }} 个测试执行设定"
+            },
+            "history" : {
+                "latestStartTime" : "最近执行时间"
+            },
+            "error": {
+                "testExecutionScenarios": "没有定义测试场景，请选择。",
+                "testCases": "缺少测试用例，请选择。",
+                "testCasesWithTestScenarioName": "测试场景{{ name }}缺少测试用例，请选择。",
+                "selectTestDataPatterns": "请选择测试数据样式。",
+                "noTestDataPatterns": "有的测试用例没有数据样式，请在测试用例功能中创建数据样式",
+                "testScenarioDataPatterns": "有的测试场景没有包含测试用例，请在测试场景功能中选择测试用例",
+                "testExecutionEnvironments": "没有定义测试环境，请选择。"
+
+            },
+            "info": {
+                "selectTestDataPatterns": "请选择测试数据样式。"
+            }
+        }
+    }
+}

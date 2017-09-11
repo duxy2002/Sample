@@ -1,0 +1,60 @@
+{
+    "etest": {
+        "uiRepository" : {
+            "home": {
+                "toolbar": "Manage UI Repository Modules",
+                "title": "UI Repository Module List",
+                "createLabel": "Create a new UI Repository Module",
+                "createOrEditLabel": "Create or edit a UI Repository Module"
+            },
+            "created": "A new UI Repository Module is created with identifier {{ name }}",
+            "updated": "A UI Repository Module is updated with identifier {{ name }}",
+            "deleted": "A UI Repository Module is deleted with identifier {{ name }}",
+            "delete": {
+                "question": "Are you sure you want to delete UI Repository Module - {{ name }}?"
+            },
+            "detail": {
+                "title": "UI Repository Module Form"
+            },
+            "name": "Repository",
+            "module": "Repository Module",
+            "type": "Repository Type",
+            "description": "Description",
+            "selector": {
+                "hint": "Input and save module info before you add screen objects",
+                "add": "Start to add screen objects",
+                "none": "No screen object has been defined",
+                "addScreen": "Add Screen Object",
+                "addElement": "Add Element Object",
+                "copy": "Copy",
+                "view": "View",
+                "edit": "Edit",
+                "delete": "Delete",
+                "save": "Save",
+                "cancel": "Cancel",
+                "invalidData": "Please confirm the input data again because validation failed",
+                "notSaved": "{{ name }} is modified, please save or cancel the modification",
+                "defaultScreenName": "New Screen Object #{{ unique }}",
+                "defaultElementName": "New Element Object #{{ unique }}",
+                "screenCopyAppend": "- Copy #{{ unique }}",
+                "elementCopyAppend": "- Copy #{{ unique }}"
+            },
+            "editor": {
+                "hint": "Please select screen element object from the left side panel",
+                "created": "A new UI Object is defined with identifier {{ name }}",
+                "updated": "A UI Object is updated with identifier {{ name }}",
+                "deleted": "A UI Object is deleted with identifier {{ name }}",
+                "delete": {
+                    "question": "Are you sure you want to delete UI Object - {{ name }}?"
+                },
+                "tabs": {
+                    "basic": "Basic",
+                    "localization": "Localization",
+                    "identification": "Identification",
+                    "synchronization": "Synchronization",
+                    "property": "Property"
+                }
+            }
+        }
+    }
+}

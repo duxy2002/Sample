@@ -1,0 +1,28 @@
+{
+    "etest": {
+        "screenElementObject": {
+            "home": {
+                "toolbar": "Manage Screen Elements",
+                "title": "Screen Element List",
+                "createLabel": "Create a new Screen Element",
+                "createOrEditLabel": "Create or edit a Screen Element"
+            },
+            "created": "A new Screen Element is created with identifier {{ name }}",
+            "updated": "A Screen Element is updated with identifier {{ name }}",
+            "deleted": "A Screen Element is deleted with identifier {{ name }}",
+            "delete": {
+                "question": "Are you sure you want to delete Screen Element - {{ name }}?"
+            },
+            "detail": {
+                "title": "Screen Element"
+            },
+            "name": "Name",
+            "objectType": "Object Type",
+            "inputable": "Inputable",
+            "verifiable": "Verifiable",
+            "actionable": "Actionable",
+            "screenshotPath": "Screenshot Path",
+            "description": "Description"
+        }
+    }
+}

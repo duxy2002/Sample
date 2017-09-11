@@ -1,0 +1,33 @@
+{
+    "etest": {
+        "testRepositoryModule" : {
+            "home": {
+                "toolbar": "管理对象库定义",
+                "title": "对象库定义列表",
+                "createLabel": "创建对象库定义",
+                "createOrEditLabel": "创建或编辑对象库定义"
+            },
+            "created": "创建了对象库定义 {{ name }}",
+            "updated": "更新了对象库定义 {{ name }}",
+            "deleted": "删除了对象库定义 {{ name }}",
+            "imported": "导入了对象库定义 {{ name }}",
+            "exported": "导出了对象库定义 {{ name }}",
+            "delete": {
+                "question": "您确认要删除对象库定义 {{ name }} 吗？"
+            },
+            "detail": {
+                "title": "对象库定义"
+            },
+            "name": "模块名",
+            "description": "说明",
+            "screenObjects": "画面对象",
+            "repository": "对象库",
+            "actions": {
+                "import": {
+                    "select": "请选择对象库定义文件..."
+                }
+            },
+            "default": "默认对象库模块"
+        }
+    }
+}

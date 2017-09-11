@@ -1,0 +1,11 @@
+{
+    "etest": {
+        "objectSynchronization" : {
+            "strategy": "同期策略",
+            "waitForObjectId": "等待画面元素",
+            "waitForProperty": "等待元素属性",
+            "waitForValue": "等待值",
+            "timeout": "超时（秒）"
+        }
+    }
+}

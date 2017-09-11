@@ -1,0 +1,51 @@
+{
+    "etest": {
+        "testRepositoryType" : {
+            "home": {
+                "toolbar": "Manage Test Repository Types",
+                "title": "Test Repository Type List",
+                "createLabel": "Create a new Test Repository Type",
+                "createOrEditLabel": "Create or edit a Test Repository Type"
+            },
+            "created": "A new Test Repository Type is created with identifier {{ name }}",
+            "updated": "A Test Repository Type is updated with identifier {{ name }}",
+            "deleted": "A Test Repository Type is deleted with identifier {{ name }}",
+            "delete": {
+                "question": "Are you sure you want to delete Test Repository Type - {{ name }}?"
+            },
+            "detail": {
+                "title": "Test Repository Type Form"
+            },
+            "name": "Name",
+            "enabled": "Enabled",
+            "description": "Description",
+            "types": {
+                "ui": {
+                    "title": "User Interface",
+                    "import": "Import UI Repository Module",
+                    "icon": "web"
+                },
+                "db": {
+                    "title": "Database",
+                    "icon": "grid_on"
+                },
+                "file": {
+                    "title": "File",
+                    "icon": "insert_drive_file"
+                },
+                "batch": {
+                    "title": "Batch Program",
+                    "icon": "alarm"
+                },
+                "log": {
+                    "title": "Log File",
+                    "icon": "event_note"
+                },
+                "data": {
+                    "title": "Data Template",
+                    "icon": "flip_to_front"
+                }
+            }
+        }
+    }
+}

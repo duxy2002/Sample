@@ -1,0 +1,26 @@
+{
+    "etest": {
+        "uiInputData" : {
+            "home": {
+                "toolbar": "管理画面输入数据",
+                "title": "测试画面输入数据",
+                "createLabel": "创建画面输入数据",
+                "createOrEditLabel": "创建或编辑画面输入数据"
+            },
+            "created": "创建了画面输入数据 {{ name }}",
+            "updated": "更新了画面输入数据 {{ name }}",
+            "deleted": "删除了画面输入数据 {{ name }}",
+            "delete": {
+                "question": "您确认要删除画面输入数据 {{ name }} 吗？"
+            },
+            "detail": {
+                "title": "定义开始画面中的输入项目"
+            },
+            "element": "画面元素",
+            "inputMethod": "输入",
+            "inputData": "设定值",
+            "inputDataType": "数据类型",
+            "dataReset": "因为开始画面的变化，画面输入数据被自动初始化"
+        }
+    }
+}

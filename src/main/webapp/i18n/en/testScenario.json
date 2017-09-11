@@ -1,0 +1,51 @@
+{
+    "etest": {
+        "testScenario": {
+            "home": {
+                "toolbar": "Manage Test Scenario",
+                "title": "Test Scenario List",
+                "createLabel": "Create a new Test Scenario",
+                "createOrEditLabel": "Create or edit a Test Scenario"
+            },
+            "steps": {
+                "basic": "Basic Information",
+                "design": "Design Test Case Flow",
+                "show": "show test cases selection panel",
+                "hide": "hide test cases selection panel",
+                "none": "No test case has been selected",
+                "info": "You can drage the testCase Item by dragging the arrow icon."
+            },
+            "created": "A new Test Scenario is created with identifier {{ name }}",
+            "updated": "A Test Scenario is updated with identifier {{ name }}",
+            "deleted": "A Test Scenario is deleted with identifier {{ name }}",
+            "delete": {
+                "question": "Are you sure you want to delete Test Scenario - {{ name }}?"
+            },
+            "detail": {
+                "title": "Test Scenario"
+            },
+            "testCase": {
+                "title": "Test Case List",
+                "subTitle": "Select Test Case",
+                "searchByName": "Search by Name",
+                "searchByTag": "Search by Tag",
+                "selectAll": "Select All",
+                "additionalInfo": "Test Case Info",
+                "detailInfo": "Detail Parameters Info",
+                "key": "Key",
+                "value": "Value"
+            },
+            "name": "Name",
+            "priority": "Priority",
+            "tags": "Tags",
+            "description": "Description",
+            "projectId": "Project",
+            "testCases": "Test Cases",
+            "downloadLog": "Download Log File",
+            "downloadVideo": "Download Video File",
+            "selected" : {
+                "count": "{{ count }} item(s) selected"
+            }
+        }
+    }
+}

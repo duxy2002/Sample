@@ -1,0 +1,11 @@
+{
+    "etestApp": {
+        "TestExecutionStatus" : {
+            "null": "",
+            "IN_PLAN": "IN_PLAN",
+            "EXECUTED": "EXECUTED",
+            "CANCELED": "CANCELED",
+            "CLOSED": "CLOSED"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "etest": {
+        "SynchronizationStrategy" : {
+            "null": "",
+            "DEFAULT": "Default",
+            "WAIT_FOR_TEXT_PRESENT": "Wait For Text Present",
+            "WAIT_FOR_TEXT_NOT_PRESENT": "Wait For Text Not Present",
+            "WAIT_FOR_VISIBLE": "Wait For Visible",
+            "WAIT_FOR_HIDDEN": "Wait For Hidden",
+            "WAIT_FOR_ENABLE": "Wait For Enable",
+            "WAIT_FOR_DISABLE": "Wait For Disable",
+            "WAIT_FOR_PROPERTY_CHANGE": "Wait For Property Change",
+            "WAIT_FOR_CONDITION": "Wait For Condition"
+        }
+    }
+}

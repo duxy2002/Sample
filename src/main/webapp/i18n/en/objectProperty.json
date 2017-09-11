@@ -1,0 +1,26 @@
+{
+    "etestApp": {
+        "objectProperty" : {
+            "home": {
+                "title": "Object Properties",
+                "createLabel": "Create a new Object Property",
+                "createOrEditLabel": "Create or edit a Object Property"
+            },
+            "created": "A new Object Property is created with identifier {{ param }}",
+            "updated": "A Object Property is updated with identifier {{ param }}",
+            "deleted": "A Object Property is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Object Property {{ id }}?"
+            },
+            "detail": {
+                "title": "Object Property"
+            },
+            "name": "Name",
+            "type": "Type",
+            "value": "Value",
+            "description": "Description",
+            "screenObject": "Screen Object",
+            "screenElementObject": "Screen Element Object"
+        }
+    }
+}

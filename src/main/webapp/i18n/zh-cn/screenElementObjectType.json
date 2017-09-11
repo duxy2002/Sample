@@ -1,0 +1,46 @@
+{
+    "etest": {
+        "screenElementObjectType" : {
+            "home": {
+                "toolbar": "管理画面对象类型",
+                "title": "画面对象类型列表",
+                "createLabel": "创建画面对象类型",
+                "createOrEditLabel": "创建或编辑画面对象类型"
+            },
+            "created": "创建了画面对象类型 {{ name }}",
+            "updated": "更新了画面对象类型 {{ name }}",
+            "deleted": "删除了画面对象类型 {{ name }}",
+            "delete": {
+                "question": "您确认要删除画面对象类型 {{ name }} 吗？"
+            },
+            "detail": {
+                "title": "画面对象类型"
+            },
+            "name": "类型名",
+            "inputable": "可输入",
+            "verifiable": "可验证",
+            "actionable": "可动作",
+            "containable": "容器型",
+            "icon": "图标",
+            "screenshotPath": "截屏路径",
+            "description": "说明",
+            "tabs": {
+                "basic":"基本信息",
+                "property": {
+                    "title":"属性定义",
+                    "none": "没有定义好的属性",
+                    "name": "属性名",
+                    "type": "属性类型",
+                    "value": "属性值",
+                    "default": "默认属性",
+                    "description": "说明"
+                },
+                "action": {
+                    "title":"对象动作定义",
+                    "none": "没有定义好的画面对象动作",
+                    "add": "开始添加画面对象动作"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "etest": {
+        "objectLocalization" : {
+            "x": "X坐标值",
+            "y": "Y坐标值",
+            "width": "宽度",
+            "height": "高度",
+            "enable": "开启定位设定"
+        }
+    }
+}

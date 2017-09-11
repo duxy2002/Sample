@@ -1,0 +1,28 @@
+{
+    "dashboard": {
+        "title": "Project Dashboard",
+        "charts": {
+            "status": {
+                "title": "Status",
+                "pass": "Passed",
+                "fail": "Failed",
+                "broken": "Broken",
+                "norun": "No Run",
+                "invalidDuration": "The duration must be between 1 and 90"
+            },
+            "testCaseTotal": "Test Execution Status - Test Case",
+            "scenarioTrend": "Test Scenario Execution Status Trend",
+            "scenarioTotal": "Test Execution Status - Test Scenario",
+            "testCaseTrend": "Test Case Execution Status Trend",
+            "executionSummary": "Execution Set Result Summary",
+            "nodata": "No Data Available",
+            "view": "View Details",
+            "table": {
+                "setName": "Execution Set Name",
+                "testCases": "Test Case Count",
+                "date": "Last Executed Time",
+                "status": "Execution Status"
+            }
+        }
+    }
+}

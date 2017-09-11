@@ -1,0 +1,54 @@
+{
+    "etest": {
+        "testCase": {
+            "home": {
+                "toolbar": "Manage Test Cases",
+                "title": "Test Case List",
+                "createLabel": "Create a new Test Case",
+                "createOrEditLabel": "Create or edit a Test Case"
+            },
+            "created": "A new Test Case is created with identifier {{ name }}",
+            "updated": "A Test Case is updated with identifier {{ name }}",
+            "deleted": "A Test Case is deleted with identifier {{ name }}",
+            "delete": {
+                "question": "Are you sure you want to delete Test Case - {{ name }}?"
+            },
+            "detail": {
+                "title": "Test Case"
+            },
+            "name": "Name",
+            "priority": "Priority",
+            "tags": "Tags",
+            "description": "Description",
+            "tabs": {
+                "basic": {
+                    "title": "Basic Information",
+                    "new": "New Test Case"
+                },
+                "step": {
+                    "title": "Test Step",
+                    "add": "Start to add test steps",
+                    "new": "New Test Step #{{ unique }}",
+                    "copyAppend": "- Copy #{{ unique }}",
+                    "none": "No test step has been created"
+                },
+                "data": {
+                    "title": "Test Data",
+                    "add": "Add New Test Data Pattern",
+                    "default": "Default Data Pattern",
+                    "new": "New Test Data Pattern"
+                },
+                "parameter": {
+                    "title": "Parameter Definition",
+                    "none": "No parameter has been defined",
+                    "category": "Category",
+                    "name": "Name",
+                    "type": "Type",
+                    "validatePattern": "Validate Pattern",
+                    "defaultValue": "Default Value",
+                    "description": "Description"
+                }
+            }
+        }
+    }
+}

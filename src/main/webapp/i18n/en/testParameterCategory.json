@@ -1,0 +1,9 @@
+{
+    "etest": {
+        "TestParameterCategory" : {
+            "null": "",
+            "INPUT": "Input",
+            "OUTPUT": "Output"
+        }
+    }
+}

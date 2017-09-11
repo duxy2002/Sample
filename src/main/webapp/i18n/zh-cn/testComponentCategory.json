@@ -1,0 +1,10 @@
+{
+    "etest": {
+        "TestComponentCategory" : {
+            "null": "",
+            "PLATFORM": "平台范围",
+            "TENANT": "租户范围",
+            "PROJECT": "项目范围"
+        }
+    }
+}

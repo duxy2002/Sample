@@ -1,0 +1,11 @@
+{
+    "etest": {
+        "screenIdentification" : {
+            "framePath": "Frame Path",
+            "strategy": "Strategy",
+            "identifier": "Identifier",
+            "index": "Index",
+            "smartIdentify": "Smart Identify"
+        }
+    }
+}

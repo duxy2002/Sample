@@ -1,0 +1,26 @@
+{
+    "etestApp": {
+        "testFunction" : {
+            "home": {
+                "title": "Test Functions",
+                "createLabel": "Create a new Test Function",
+                "createOrEditLabel": "Create or edit a Test Function"
+            },
+            "created": "A new Test Function is created with identifier {{ param }}",
+            "updated": "A Test Function is updated with identifier {{ param }}",
+            "deleted": "A Test Function is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Test Function {{ id }}?"
+            },
+            "detail": {
+                "title": "Test Function"
+            },
+            "name": "Name",
+            "type": "Type",
+            "description": "Description",
+            "body": "Body",
+            "parameters": "Parameters",
+            "functionLibrary": "Function Library"
+        }
+    }
+}

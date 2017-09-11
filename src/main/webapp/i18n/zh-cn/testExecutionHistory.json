@@ -1,0 +1,49 @@
+{
+    "etest": {
+        "testExecutionHistory" : {
+            "home": {
+                "toolbar": "管理测试设定执行结果",
+                "title": "测试设定执行结果",
+                "createLabel": "创建测试执行历史",
+                "createOrEditLabel": "创建或编辑测试执行历史"
+            },
+            "created": "A new Test Execution History is created with identifier {{ name }}",
+            "updated": "A Test Execution History is updated with identifier {{ name }}",
+            "deleted": "已经删除测试执行历史 {{ name }}",
+            "allDeleted": "已经删除了所有的测试执行历史",
+            "delete": {
+                "question": "你确认要删除测试执行历史 {{ name }} 吗？",
+                "allQuestion": "你确认要删除所有的测试执行历史吗？"
+            },
+            "detail": {
+                "title": "测试执行历史",
+                "name": "测试执行历史名称"
+            },
+            "name": "名称 ",
+            "startTime": "开始时间",
+            "endTime": "结束时间",
+            "duration": "结束时间（秒）",
+            "result": {
+                "platform": "平台",
+                "title": "执行结果",
+                "shortFail": "失败",
+                "shortPass": "成功",
+                "shortRunning": "执行中",
+                "shortStarting": " 开始中",
+                "fail": "状态: 失败",
+                "pass": "状态: 成功",
+                "running": "状态: 执行中",
+                "starting": "状态: 开始中",
+                "allFail": "状态: 全部失败",
+                "allPass": "状态: 全部成功",
+                "partiallyFail": "状态: 部分失败",
+                "partiallyPass": "状态: 部分成功"
+            },
+            "platformExecutionResult": "平台执行结果",
+            "platformExecutionDetailResult": "平台详细结果",
+            "testScenarioResults": "Test Scenario Results",
+            "testExecutionSet": "Test Execution Set",
+            "testExecutionSchedule": "Test Execution Schedule"
+        }
+    }
+}

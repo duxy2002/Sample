@@ -1,0 +1,10 @@
+{
+    "etest": {
+        "ParallelExecutionMode" : {
+            "null": "",
+            "SEQUENTIAL": "SEQUENTIAL",
+            "NODE_PARALLEL": "NODE_PARALLEL",
+            "SCENARIO_PARALLEL": "SCENARIO_PARALLEL"
+        }
+    }
+}

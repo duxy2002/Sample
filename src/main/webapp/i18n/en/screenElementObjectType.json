@@ -1,0 +1,46 @@
+{
+    "etest": {
+        "screenElementObjectType" : {
+            "home": {
+                "toolbar": "Manage Object Type",
+                "title": "Object Type List",
+                "createLabel": "Create a new Object Type",
+                "createOrEditLabel": "Create or edit a Object Type"
+            },
+            "created": "A new Object Type is created with identifier {{ name }}",
+            "updated": "A Object Type is updated with identifier {{ name }}",
+            "deleted": "A Object Type is deleted with identifier {{ name }}",
+            "delete": {
+                "question": "Are you sure you want to delete Object Type - {{ name }}?"
+            },
+            "detail": {
+                "title": "Object Type"
+            },
+            "name": "Name",
+            "inputable": "Inputable",
+            "verifiable": "Verifiable",
+            "actionable": "Actionable",
+            "containable": "Containable",
+            "icon": "Icon",
+            "screenshotPath": "Screenshot Path",
+            "description": "Description",
+            "tabs": {
+                "basic":"Basic Information",
+                "property": {
+                    "title":"Property Definition",
+                    "none": "No property has been defined",
+                    "name": "Name",
+                    "type": "Type",
+                    "value": "Value",
+                    "default": "Default Property",
+                    "description": "Description"
+                },
+                "action": {
+                    "title":"Action Definition",
+                    "none": "No action has been selected",
+                    "add": "Start to add object action"
+                }
+            }
+        }
+    }
+}

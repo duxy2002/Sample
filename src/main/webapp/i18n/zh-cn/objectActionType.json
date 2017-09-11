@@ -1,0 +1,9 @@
+{
+    "etest": {
+        "ObjectActionType" : {
+            "null": "",
+            "INPUT": "数据输入",
+            "ACTION": "事件动作"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "etest": {
+        "TaskStatus" : {
+            "null": "",
+            "NEW": "新建",
+            "READY": "就绪",
+            "IN_PROCESS": "创建测试中",
+            "READY_FOR_TEST": "测试就绪",
+            "DONE": "测试完成",
+            "ARCHIVED": "归档"
+        }
+    }
+}

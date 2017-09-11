@@ -1,0 +1,10 @@
+{
+    "etestApp": {
+        "LanguageKey" : {
+            "null": "",
+            "ENGLISH": "ENGLISH",
+            "CHINESE": "CHINESE",
+            "JAPANESE": "JAPANESE"
+        }
+    }
+}

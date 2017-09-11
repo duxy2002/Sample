@@ -1,0 +1,51 @@
+{
+    "etest": {
+        "testRepositoryType" : {
+            "home": {
+                "toolbar": "管理测试对象库类型",
+                "title": "测试对象库类型列表",
+                "createLabel": "创建测试对象库类型",
+                "createOrEditLabel": "创建或编辑测试对象库类型"
+            },
+            "created": "创建了测试对象库类型 {{ name }}",
+            "updated": "更新了测试对象库类型 {{ name }}",
+            "deleted": "删除了测试对象库类型 {{ name }}",
+            "delete": {
+                "question": "您确认要删除测试对象库类型 {{ name }} 吗？"
+            },
+            "detail": {
+                "title": "测试对象库类型"
+            },
+            "name": "对象库名",
+            "enabled": "有效",
+            "description": "说明",
+            "types": {
+                "ui": {
+                    "title": "画面对象库",
+                    "import": "导入画面对象库模块定义文件",
+                    "icon": "web"
+                },
+                "db": {
+                    "title": "数据库对象库",
+                    "icon": "grid_on"
+                },
+                "file": {
+                    "title": "文件对象库",
+                    "icon": "insert_drive_file"
+                },
+                "batch": {
+                    "title": "批处理对象库",
+                    "icon": "alarm"
+                },
+                "log": {
+                    "title": "日志对象库",
+                    "icon": "event_note"
+                },
+                "data": {
+                    "title": "数据模版",
+                    "icon": "flip_to_front"
+                }
+            }
+        }
+    }
+}

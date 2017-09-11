@@ -1,0 +1,28 @@
+{
+    "etest": {
+        "screenElementObject" : {
+            "home": {
+                "toolbar": "管理画面元素",
+                "title": "画面元素列表",
+                "createLabel": "创建画面元素",
+                "createOrEditLabel": "创建或编辑画面元素"
+            },
+            "created": "创建了画面元素 {{ name }}",
+            "updated": "更新了画面元素 {{ name }}",
+            "deleted": "删除了画面元素 {{ name }}",
+            "delete": {
+                "question": "您确认要删除画面元素 {{ name }} 吗？"
+            },
+            "detail": {
+                "title": "画面元素"
+            },
+            "name": "元素名",
+            "objectType": "元素类型",
+            "inputable": "可输入",
+            "verifiable": "可验证",
+            "actionable": "可动作",
+            "screenshotPath": "截图保存路径",
+            "description": "说明"
+        }
+    }
+}

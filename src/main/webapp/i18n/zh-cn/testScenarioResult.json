@@ -1,0 +1,49 @@
+{
+    "etest": {
+        "testScenarioResult" : {
+            "home": {
+                "toolbar": "执行结果",
+                "title": "测试执行设定 - <{{ name }}>",
+                "screenShot": "画面快照",
+                "detail": "详细",
+                "result": "测试用例详细执行结果",
+                "log": "执行日志",
+                "createLabel": "Create a new Test Scenario Result",
+                "createOrEditLabel": "Create or edit a Test Scenario Result"
+            },
+            "created": "A new Test Scenario Result is created with identifier {{ param }}",
+            "updated": "A Test Scenario Result is updated with identifier {{ param }}",
+            "deleted": "A Test Scenario Result is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Test Scenario Result {{ id }}?"
+            },
+            "detail": {
+                "title": "Test Scenario Result",
+                "link": "详细",
+                "0": "第{0}次执行",
+                "1": "第{0}次执行",
+                "2": "第{0}次执行",
+                "other": "第{0}次执行"
+            },
+            "tabs": {
+                "basic": "基本信息",
+                "log": "执行日志",
+                "video": "实时视频"
+            },
+            "name": "测试场景名称",
+            "startTime": "开始时间",
+            "endTime": "结束时间",
+            "duration": "执行时间",
+            "screenshotPath": "画面截图的保存路径",
+            "logLocation": "执行日志保存路径",
+            "videoLocation": "执行视频保存路径",
+            "result": "执行结果",
+            "detailResult": "执行结果",
+            "error": "错误详细",
+            "scenario": "Scenario",
+            "environment": "Environment",
+            "testCaseResults": "Test Case Results",
+            "testExecutionHistory": "Test Execution History"
+        }
+    }
+}

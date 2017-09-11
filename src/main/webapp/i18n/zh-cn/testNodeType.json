@@ -1,0 +1,9 @@
+{
+    "etestApp": {
+        "TestNodeType" : {
+            "null": "",
+            "VM": "VM",
+            "CONTAINER": "CONTAINER"
+        }
+    }
+}

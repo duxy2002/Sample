@@ -1,0 +1,9 @@
+{
+    "etestApp": {
+        "TestExecutionStrategy" : {
+            "null": "",
+            "TIMER_DRIVEN": "TIMER_DRIVEN",
+            "CRON_DRIVEN": "CRON_DRIVEN"
+        }
+    }
+}

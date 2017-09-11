@@ -1,0 +1,54 @@
+{
+    "etest": {
+        "testCase": {
+            "home": {
+                "toolbar": "管理测试用例",
+                "title": "测试用例列表",
+                "createLabel": "创建测试用例",
+                "createOrEditLabel": "创建或编辑测试用例"
+            },
+            "created": "创建了测试用例 {{ name }}",
+            "updated": "更新了测试用例 {{ name }}",
+            "deleted": "删除了测试用例 {{ name }}",
+            "delete": {
+                "question": "您确认要删除测试用例 {{ name }} 吗？"
+            },
+            "detail": {
+                "title": "测试用例"
+            },
+            "name": "测试用例名",
+            "priority": "优先级",
+            "tags": "标签",
+            "description": "说明",
+            "tabs": {
+                "basic": {
+                    "title": "基本信息",
+                    "new": "新测试用例"
+                },
+                "step": {
+                    "title": "测试步骤",
+                    "add": "开始添加测试步骤",
+                    "new": "新测试步骤 #{{ unique }}",
+                    "copyAppend": "- 拷贝 #{{ unique }}",
+                    "none": "还没有创建测试步骤"
+                },
+                "data": {
+                    "title": "测试数据",
+                    "add": "添加数据样式",
+                    "default": "默认数据样式",
+                    "new": "新数据样式"
+                },
+                "parameter": {
+                    "title":"参数定义",
+                    "none": "没有定义好的参数",
+                    "category": "参数分类",
+                    "name": "参数名",
+                    "type": "参数类型",
+                    "validatePattern": "验证模式",
+                    "defaultValue": "默认值",
+                    "description": "说明"
+                }
+            }
+        }
+    }
+}

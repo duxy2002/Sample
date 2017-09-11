@@ -1,0 +1,23 @@
+{
+    "etestApp": {
+        "testScenarioDataPattern" : {
+            "home": {
+                "title": "Test Scenario Data Patterns",
+                "createLabel": "Create a new Test Scenario Data Pattern",
+                "createOrEditLabel": "Create or edit a Test Scenario Data Pattern"
+            },
+            "created": "A new Test Scenario Data Pattern is created with identifier {{ param }}",
+            "updated": "A Test Scenario Data Pattern is updated with identifier {{ param }}",
+            "deleted": "A Test Scenario Data Pattern is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Test Scenario Data Pattern {{ id }}?"
+            },
+            "detail": {
+                "title": "Test Scenario Data Pattern"
+            },
+            "testCaseId": "Test Case Id",
+            "testDataPatternId": "Test Data Pattern Id",
+            "testScenario": "Test Scenario"
+        }
+    }
+}

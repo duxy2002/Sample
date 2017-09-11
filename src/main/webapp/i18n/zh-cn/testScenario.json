@@ -1,0 +1,51 @@
+{
+    "etest": {
+        "testScenario": {
+            "home": {
+                "toolbar": "管理测试场景",
+                "title": "测试场景列表",
+                "createLabel": "创建测试场景",
+                "createOrEditLabel": "创建或编辑测试场景"
+            },
+            "steps": {
+                "basic": "基本信息",
+                "design": "测试用例流程",
+                "show": "显示测试用例选择面板",
+                "hide": "隐藏测试用例选择面板",
+                "none": "还没有选择测试用例",
+                "info": "鼠标点击方向图标可以拖动测试用例调整执行顺序。"
+            },
+            "created": "创建了测试场景 {{ name }}",
+            "updated": "更新了测试场景 {{ name }}",
+            "deleted": "删除了测试场景 {{ name }}",
+            "delete": {
+                "question": "你确认要删除测试场景 {{ name }} 吗？"
+            },
+            "detail": {
+                "title": "测试场景"
+            },
+            "testCase": {
+                "title": "测试用例列表",
+                "subTitle": "选择测试用例",
+                "searchByName": "通过名称检索",
+                "searchByTag": "通过标签检索",
+                "selectAll": "全选择",
+                "additionalInfo": "测试用例信息",
+                "detailInfo": "详细参数信息",
+                "key": "参数名",
+                "value": "参数值"
+            },
+            "name": "测试场景名称",
+            "priority": "优先级",
+            "tags": "标签",
+            "description": "说明",
+            "projectId": "项目",
+            "testCases": "测试用例",
+            "downloadLog": "下载日志文件",
+            "downloadVideo": "下载视频文件",
+            "selected": {
+                "count": "选择了{{ count }} 个测试场景"
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "etest": {
+        "objectLocalization" : {
+            "x": "X",
+            "y": "Y",
+            "width": "Width",
+            "height": "Height",
+            "enable": "Enable Localization"
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "etest": {
+        "testStepItemResult" : {
+            "home": {
+                "title": "Test Step Item Results",
+                "createLabel": "Create a new Test Step Item Result",
+                "createOrEditLabel": "Create or edit a Test Step Item Result"
+            },
+            "created": "A new Test Step Item Result is created with identifier {{ param }}",
+            "updated": "A Test Step Item Result is updated with identifier {{ param }}",
+            "deleted": "A Test Step Item Result is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Test Step Item Result {{ id }}?"
+            },
+            "detail": {
+                "title": "Test Step Item Result"
+            },
+            "type": "Type",
+            "resultPass": "Success",
+            "resultFail": "Failure",
+            "inputEvent": "INPUT",
+            "actionEvent": "ACTION",
+            "checkPointEvent": "CHECKPOINT",
+            "inputEventMessage": "Input data on control [{0}]",
+            "actionEventMessage": "Click control [{0}]",
+            "checkPointEventMessage": "Verify control [{0}]",
+
+            "inputResult": "Input Result",
+            "inputMethod": "Input Method",
+            "inputData": "Input Data",
+            "actionResult": "Action Result",
+            "actionEventType": "Action Event",
+            "verifyResult": "Verify Result",
+            "expectation": "Expectation",
+            "matchMode": "Match Mode",
+            "assertProperty": "Assert Property",
+            "expectedValue": "Expected Value",
+            "actualValue": "Actual Value",
+            "parameterTitle": "Parameters",
+            "parameterMessage": "{0} : {1}",
+
+            "objectsynchronizationduration": "Objectsynchronizationduration",
+            "screenshotPath": "Screenshot Path",
+            "result": "Result",
+            "resultDetail": "Result Detail",
+            "screenElementObject": "Screen Element Object",
+            "functions": "Functions",
+            "testStepResult": "Test Step Result"
+        }
+    }
+}

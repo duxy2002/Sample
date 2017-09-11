@@ -1,0 +1,26 @@
+{
+    "etest": {
+        "testExecutionScenario" : {
+            "home": {
+                "toolbar": "管理测试执行场景",
+                "title": "Test Execution Scenarios",
+                "createLabel": "Create a new Test Execution Scenario",
+                "createOrEditLabel": "Create or edit a Test Execution Scenario"
+            },
+            "created": "创建了测试执行场景 {{ name }}",
+            "updated": "更新了测试执行场景 {{ name }}",
+            "deleted": "删除了测试执行场景 {{ name }}",
+            "delete": {
+                "question": "您确认要删除测试执行场景 {{ name }} 吗？"
+            },
+            "detail": {
+                "title": "Test Execution Scenario"
+            },
+            "name": "名称",
+            "parallelCount": "并发执行数目",
+            "executionTimes": "执行次数",
+            "description": "描述",
+            "scenario": "Scenario"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "etestApp": {
+        "ScreenshotMode" : {
+            "null": "",
+            "TESTSTEP": "TESTSTEP",
+            "TESTACTION": "TESTACTION",
+            "TESTACTION_ON_ERROR": "TESTACTION_ON_ERROR",
+            "TESTSTEP_ON_ERROR": "TESTSTEP_ON_ERROR"
+        }
+    }
+}

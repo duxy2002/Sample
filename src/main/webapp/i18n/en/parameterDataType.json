@@ -1,0 +1,14 @@
+{
+    "etest": {
+        "ParameterDataType" : {
+            "null": "",
+            "STRING": "String",
+            "INTEGER": "Integer",
+            "FLOAT": "Float",
+            "BOOLEAN": "Boolean",
+            "DATE": "Date",
+            "SCREEN_ELEMENT_OBJECT": "Screen Element Object",
+            "TABLE_DATA_TEMPLATE": "Table Data Template"
+        }
+    }
+}

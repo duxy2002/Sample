@@ -1,0 +1,10 @@
+{
+    "etestApp": {
+        "SeleneseCommandType" : {
+            "null": "",
+            "INPUT": "INPUT",
+            "VERIFY": "VERIFY",
+            "ACTION": "ACTION"
+        }
+    }
+}

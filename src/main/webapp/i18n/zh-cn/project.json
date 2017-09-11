@@ -1,0 +1,45 @@
+{
+    "etest": {
+        "project": {
+            "home": {
+                "toolbar": "管理项目",
+                "title": "项目列表",
+                "createLabel": "创建项目",
+                "createOrEditLabel": "创建或编辑项目"
+            },
+            "switched": "切换到项目 {{ name }}",
+            "created": "创建了项目 {{ name }}",
+            "updated": "更新了项目 {{ name }}",
+            "deleted": "删除了项目 {{ name }}",
+            "delete": {
+                "question": "你确认要删除项目 {{ name }} 吗？"
+            },
+            "detail": {
+                "title": "项目详细"
+            },
+            "name": "项目名",
+            "description": "说明",
+            "tabs": {
+                "basic":"基本信息",
+                "groups": {
+                    "adduser":"添加用户",
+                    "addgroup":"添加用户组",
+                    "user":"开始添加用户",
+                    "nouser":"还没有添加用户",
+                    "import": "开始添加用户组",
+                    "none": "还没有添加用户组"
+                    },
+                  "users": {
+                    "adduser":"添加用户",
+                    "user":"开始添加用户",
+                    "nouser":"还没有添加用户"
+                    }
+                },
+            "isActive": "活跃项目",
+            "isPublic": "公开项目",
+            "account": "账户",
+            "groupAuths": "Group Auths",
+            "userAuths": "User Auths"
+        }
+    }
+}

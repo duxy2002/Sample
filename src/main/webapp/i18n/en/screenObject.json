@@ -1,0 +1,26 @@
+{
+    "etest": {
+        "screenObject" : {
+            "home": {
+                "toolbar": "Manage Screen Objects",
+                "title": "Screen Object List",
+                "createLabel": "Create a new Screen Object",
+                "createOrEditLabel": "Create or edit a Screen Object"
+            },
+            "created": "A new Screen Object is created with identifier {{ name }}",
+            "updated": "A Screen Object is updated with identifier {{ name }}",
+            "deleted": "A Screen Object is deleted with identifier {{ name }}",
+            "delete": {
+                "question": "Are you sure you want to delete Screen Object - {{ name }}?"
+            },
+            "detail": {
+                "title": "Screen Object"
+            },
+            "name": "Name",
+            "objectType": "Object Type",
+            "windowType": "Window Type",
+            "screenshotPath": "Screenshot Path",
+            "description": "Description"
+        }
+    }
+}

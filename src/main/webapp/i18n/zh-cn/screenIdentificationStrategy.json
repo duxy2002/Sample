@@ -1,0 +1,9 @@
+{
+    "etest": {
+        "ScreenIdentificationStrategy" : {
+            "null": "",
+            "INDEX": "索引识别",
+            "TITLE": "标题识别"
+        }
+    }
+}

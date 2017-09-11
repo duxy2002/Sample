@@ -1,0 +1,33 @@
+{
+    "etest": {
+        "requirementSet" : {
+            "home": {
+                "toolbar": "Manage Requirement Sets",
+                "title": "Requirement Set List",
+                "createLabel": "Create a new Requirement Set",
+                "createOrEditLabel": "Create or edit a Requirement Set"
+            },
+            "created": "A new Requirement Set is created with identifier {{ name }}",
+            "updated": "A Requirement Set is updated with identifier {{ name }}",
+            "deleted": "A Requirement Set is deleted with identifier {{ name }}",
+            "delete": {
+                "question": "Are you sure you want to delete Requirement Set - {{ name }}?"
+            },
+            "detail": {
+                "title": "Requirement Set Form"
+            },
+            "name": "Name",
+            "weight": "Weight",
+            "status": "Status",
+            "description": "Description",
+            "tabs": {
+                "basic":"Basic Information",
+                "requirements": {
+                    "title":"Add Requirements",
+                    "import": "Start to select requirements",
+                    "none": "No requirements has been selected"
+                }
+            }
+        }
+    }
+}

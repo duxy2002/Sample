@@ -1,0 +1,9 @@
+{
+    "etestApp": {
+        "TestCaseItemType" : {
+            "null": "",
+            "TEST_STEP": "TEST_STEP",
+            "TEST_COMPONENT": "TEST_COMPONENT"
+        }
+    }
+}

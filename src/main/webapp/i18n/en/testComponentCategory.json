@@ -1,0 +1,10 @@
+{
+    "etest": {
+        "TestComponentCategory" : {
+            "null": "",
+            "PLATFORM": "Platform Scope",
+            "TENANT": "Tenant Scope",
+            "PROJECT": "Project Scope"
+        }
+    }
+}

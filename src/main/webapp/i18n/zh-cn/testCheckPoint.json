@@ -1,0 +1,29 @@
+{
+    "etest": {
+        "testCheckPoint" : {
+            "home": {
+                "toolbar": "管理画面验证数据",
+                "title": "测试画面验证数据",
+                "createLabel": "创建画面验证数据",
+                "createOrEditLabel": "创建或编辑画面验证数据"
+            },
+            "created": "创建了画面验证数据 {{ name }}",
+            "updated": "更新了画面验证数据 {{ name }}",
+            "deleted": "删除了画面验证数据 {{ name }}",
+            "delete": {
+                "question": "您确认要删除画面验证数据 {{ name }} 吗？"
+            },
+            "detail": {
+                "title": "定义结束画面中的验证项目"
+            },
+            "element": "画面元素",
+            "property": "属性",
+            "assertType": "验证",
+            "assertMatchMode": "匹配模式",
+            "breakOnFail": "验证失败时终止",
+            "parameters": "参数",
+            "value": "验证值",
+            "dataReset": "因为结束画面的变化，画面验证数据被自动初始化"
+        }
+    }
+}

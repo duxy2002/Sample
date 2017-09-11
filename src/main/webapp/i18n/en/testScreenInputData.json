@@ -1,0 +1,26 @@
+{
+    "etest": {
+        "uiInputData" : {
+            "home": {
+                "toolbar": "Manage UI Input Data",
+                "title": "UI Input Data List",
+                "createLabel": "Create a new UI Input Data",
+                "createOrEditLabel": "Create or edit a UI Input Data"
+            },
+            "created": "A new UI Input Data is created with identifier {{ name }}",
+            "updated": "A UI Input Data is updated with identifier {{ name }}",
+            "deleted": "A UI Input Data is deleted with identifier {{ name }}",
+            "delete": {
+                "question": "Are you sure you want to delete UI Input Data - {{ name }}?"
+            },
+            "detail": {
+                "title": "Add Input Data for Start Screen"
+            },
+            "element": "UI Element",
+            "inputMethod": "Input",
+            "inputData": "Value",
+            "inputDataType": "Data Type",
+            "dataReset": "Input data has been reset because start screen changed"
+        }
+    }
+}

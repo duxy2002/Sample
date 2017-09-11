@@ -1,0 +1,53 @@
+{
+    "etest": {
+        "testComponent" : {
+            "home": {
+                "toolbar": "管理测试组件",
+                "title": "测试组件列表",
+                "createLabel": "创建测试组件",
+                "createOrEditLabel": "创建或编辑测试组件"
+            },
+            "created": "创建了测试组件 {{ name }}",
+            "updated": "更新了测试组件 {{ name }}",
+            "deleted": "删除了测试组件 {{ name }}",
+            "delete": {
+                "question": "您确认要删除测试组件 {{ name }} 吗？"
+            },
+            "detail": {
+                "title": "测试组件"
+            },
+            "name": "测试组件名",
+            "category": "分类",
+            "type": "类型",
+            "description": "说明",
+            "tabs": {
+                "basic": {
+                    "title": "基本信息",
+                    "new": "新测试组件"
+                },
+                "step": {
+                    "title": "测试步骤",
+                    "add": "开始添加测试步骤",
+                    "new": "新测试步骤",
+                    "none": "还没有创建测试步骤"
+                },
+                "data": {
+                    "title": "测试数据",
+                    "add": "开始添加测试数据",
+                    "new": "新测试数据",
+                    "none": "还没有创建测试数据"
+                },
+                "parameter": {
+                    "title":"参数定义",
+                    "none": "没有定义好的参数",
+                    "category": "参数分类",
+                    "name": "参数名",
+                    "type": "参数类型",
+                    "validatePattern": "验证模式",
+                    "defaultValue": "默认值",
+                    "description": "说明"
+                }
+            }
+        }
+    }
+}
