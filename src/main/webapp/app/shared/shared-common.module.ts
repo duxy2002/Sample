@@ -4,9 +4,14 @@ import { Title } from '@angular/platform-browser';
 import {
     SampleSharedLibsModule,
     JhiAlertComponent,
-    JhiAlertErrorComponent
+    JhiAlertErrorComponent,
 } from './';
 
+import {
+    TdLoadingService,
+    TdDialogService,
+    TdDigitsPipe
+} from '@covalent/core';
 @NgModule({
     imports: [
         SampleSharedLibsModule
@@ -19,8 +24,12 @@ import {
         Title,
         {
             provide: LOCALE_ID,
-            useValue: 'en'
+            useValue: 'zh-cn'
         },
+        /** Covalent Service */
+        TdLoadingService,
+        TdDialogService,
+        TdDigitsPipe
     ],
     exports: [
         SampleSharedLibsModule,

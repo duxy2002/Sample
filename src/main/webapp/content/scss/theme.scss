@@ -132,25 +132,6 @@ td-steps {
     }
 }
 
-/* ----------------Items Component Style Customization --------------------- */
-et-items {
-    .et-item-header {
-        button {
-            &,
-            & * {
-                color: mat-color(mat-palette($mat-grey, 400));
-            }
-            &:focus,
-            &:hover {
-                &,
-                & * {
-                    color: mat-color($accent);
-                }
-            }
-        }
-    }
-}
-
 /* ----------------Snack Bar Style Customization --------------------------- */
 
 .cdk-overlay-container {

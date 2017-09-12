@@ -4,7 +4,6 @@ import { Observable } from 'rxjs/Observable';
 import { Injector } from '@angular/core';
 import { AuthServerProvider } from '../../shared/auth/auth-session.service';
 import { StateStorageService } from '../../shared/auth/state-storage.service';
-import { LoginModalService } from '../../shared/login/login-modal.service';
 
 export class AuthExpiredInterceptor extends JhiHttpInterceptor {
 
@@ -30,8 +29,8 @@ export class AuthExpiredInterceptor extends JhiHttpInterceptor {
                     this.stateStorageService.storePreviousState(to.name, toParams);
                 }
 
-                const loginServiceModal = this.injector.get(LoginModalService);
-                loginServiceModal.open();
+                // const loginServiceModal = this.injector.get(LoginModalService);
+                // loginServiceModal.open();
 
             }
             return Observable.throw(error);

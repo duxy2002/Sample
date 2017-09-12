@@ -1,9 +1,0 @@
-{
-    "etest": {
-        "ScreenIdentificationStrategy" : {
-            "null": "",
-            "INDEX": "Index",
-            "TITLE": "Title"
-        }
-    }
-}

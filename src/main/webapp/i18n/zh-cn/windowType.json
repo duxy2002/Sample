@@ -1,9 +1,0 @@
-{
-    "etest": {
-        "WindowType" : {
-            "null": "",
-            "MAIN": "主窗体",
-            "POPUP": "弹出窗体"
-        }
-    }
-}

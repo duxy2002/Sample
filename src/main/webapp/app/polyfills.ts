@@ -11,6 +11,8 @@ import 'web-animations-js';  // Run `npm install --save web-animations-js`.
 
 import 'reflect-metadata/Reflect';
 import 'zone.js/dist/zone';
+// https://stackoverflow.com/questions/41322566/angular-2-could-not-find-hammerjs
+import 'hammerjs/hammer';
 
 require('../manifest.webapp');
 

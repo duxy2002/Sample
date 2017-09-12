@@ -1,9 +1,0 @@
-{
-    "etest": {
-        "TestComponentType" : {
-            "null": "",
-            "SCRIPT": "Test Script",
-            "TEST_STEPS": "Test Steps"
-        }
-    }
-}

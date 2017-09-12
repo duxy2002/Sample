@@ -1,9 +1,0 @@
-{
-    "etest": {
-        "TestParameterCategory" : {
-            "null": "",
-            "INPUT": "输入",
-            "OUTPUT": "输出"
-        }
-    }
-}

@@ -1,9 +1,0 @@
-{
-    "etestApp": {
-        "TestComponentItemType" : {
-            "null": "",
-            "TEST_STEP": "TEST_STEP",
-            "TEST_SCRIPT": "TEST_SCRIPT"
-        }
-    }
-}
