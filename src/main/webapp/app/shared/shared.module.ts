@@ -9,11 +9,8 @@ import {
     AccountService,
     UserService,
     StateStorageService,
-    LoginService,
-    LoginModalService,
     Principal,
     HasAnyAuthorityDirective,
-    JhiLoginModalComponent
 } from './';
 
 @NgModule({
@@ -22,12 +19,9 @@ import {
         SampleSharedCommonModule
     ],
     declarations: [
-        JhiLoginModalComponent,
         HasAnyAuthorityDirective
     ],
     providers: [
-        LoginService,
-        LoginModalService,
         AccountService,
         StateStorageService,
         Principal,
@@ -36,10 +30,8 @@ import {
         UserService,
         DatePipe
     ],
-    entryComponents: [JhiLoginModalComponent],
     exports: [
         SampleSharedCommonModule,
-        JhiLoginModalComponent,
         HasAnyAuthorityDirective,
         DatePipe
     ],

@@ -1,4 +1,6 @@
 export * from './constants/pagination.constants';
+export * from './constants/time.constants';
+export * from './constants/event.constants';
 export * from './alert/alert.component';
 export * from './alert/alert-error.component';
 export * from './auth/csrf.service';

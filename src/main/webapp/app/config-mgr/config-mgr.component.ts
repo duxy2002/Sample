@@ -5,6 +5,9 @@ import {MdSnackBar} from '@angular/material';
 import {TdLoadingService, TdDialogService, TdMediaService} from '@covalent/core';
 
 import 'rxjs/add/operator/toPromise';
+import { SNACK_BAR_SHOW_DURATION } from '../shared/index';
+import { JhiEventManager } from 'ng-jhipster';
+import {EVENT_ACTIVATE_CONFIG_ITEM} from "../shared/constants/event.constants";
 
 @Component({
     selector: 'qs-users',
@@ -18,6 +21,7 @@ export class ConfigManagementComponent implements AfterViewInit, OnInit {
 
     constructor(private _titleService: Title,
                 private _loadingService: TdLoadingService,
+                private eventManager: JhiEventManager,
                 private _dialogService: TdDialogService,
                 private _snackBarService: MdSnackBar,
                 private _changeDetectorRef: ChangeDetectorRef,
@@ -26,8 +30,17 @@ export class ConfigManagementComponent implements AfterViewInit, OnInit {
 
     ngOnInit(): void {
         this._titleService.setTitle('配置项管理');
+        // this.registerChangeInConfigItems();
         this.load();
     }
+
+    // private registerChangeInConfigItems() {
+    //     this.eventManager.subscribe(EVENT_ACTIVATE_CONFIG_ITEM, (response) => {
+    //         this._snackBarService.open(response.content, null, {
+    //             duration: SNACK_BAR_SHOW_DURATION,
+    //         });
+    //     });
+    // }
 
     ngAfterViewInit(): void {
         // broadcast to all listener observables when loading the ge
@@ -37,14 +50,14 @@ export class ConfigManagementComponent implements AfterViewInit, OnInit {
         this._changeDetectorRef.detectChanges();
     }
 
-    filterUsers(displayName = ''): void {
-        this.filteredData = this.data.filter((user: any) => {
-            return user.displayName.toLowerCase().indexOf(displayName.toLowerCase()) > -1;
+    filterConfigs(displayName = ''): void {
+        this.filteredData = this.data.filter((config: any) => {
+            return config.displayName.toLowerCase().indexOf(displayName.toLowerCase()) > -1;
         });
     }
 
     async load(): Promise<void> {
-            this._loadingService.register('users.list');
+            this._loadingService.register('configs.list');
             // this.users = await this._userService.query().toPromise();
             this.data = [
                 {
@@ -65,7 +78,7 @@ export class ConfigManagementComponent implements AfterViewInit, OnInit {
                     'user': 'liwanyang',
                     'created': '09/04/2017 15:48:04',
                     'lastAccess': '09/04/2017 15:48:04',
-                    'status': 'normal'
+                    'status': 'deleted'
                 },
                 {
                     'id': 52256,
@@ -98,35 +111,58 @@ export class ConfigManagementComponent implements AfterViewInit, OnInit {
                     'status': 'deleted'
                 }
             ];
-            this.filteredData = Object.assign([], this.data);
-            this._loadingService.resolve('users.list');
+
+            this.filteredData = [];
+            this.data.forEach((config: any) => {
+                this.filteredData.push(Object.assign({}, config));
+            });
+            this._loadingService.resolve('configs.list');
     }
 
-    delete(id: string): void {
+    activate(id: number, name: string): void {
         this._dialogService
-            .openConfirm({message: 'Are you sure you want to delete this config?'})
+            .openConfirm({
+                message: '您想使用该配置项: '  + name + '吗?',
+                title: '基础服务组平台',
+                acceptButton: '确认',
+                cancelButton: '取消'
+            })
             .afterClosed().toPromise().then((confirm: boolean) => {
             if (confirm) {
-                this._delete(id);
+                this._activate(id, name);
             }
         });
     }
 
-    private async _delete(id: string): Promise<void> {
+    private async _activate(id: number, name: string): Promise<void> {
         try {
-            this._loadingService.register('users.list');
+
             // await this._userService.delete(id).toPromise();
-            this.data = this.data.filter((config: any) => {
-                return config.id !== id;
+
+            this.data.map((config: any) => {
+                if (config.id === id) {
+                    config.status = 'normal';
+                } else if (config.status === 'normal') {
+                    config.status = 'deleted';
+                }
             });
-            this.filteredData = this.filteredData.filter((config: any) => {
-                return config.id !== id;
+            this.filteredData.map((config: any) => {
+                if (config.id === id) {
+                    config.status = 'normal';
+                } else if (config.status === 'normal') {
+                    config.status = 'deleted';
+                }
             });
-            this._snackBarService.open('Config Deleted', 'Ok');
+            // this._snackBarService.open('成功启用了配置项：' + name + ' !', null);
+
+            this._snackBarService.open('成功启用了配置项：' + name + ' !', null, {
+                duration: SNACK_BAR_SHOW_DURATION,
+            });
+
         } catch (error) {
-            this._dialogService.openAlert({message: 'There was an error trying to delete the config'});
+            this._dialogService.openAlert({message: '在启用配置项：' + name + ' 时发生了错误!' });
         } finally {
-            this._loadingService.resolve('users.list');
+            //
         }
     }
 
