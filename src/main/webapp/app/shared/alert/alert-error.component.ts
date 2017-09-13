@@ -1,16 +1,15 @@
 import { Component, OnDestroy } from '@angular/core';
 import { JhiEventManager, JhiAlertService } from 'ng-jhipster';
 import { Subscription } from 'rxjs/Rx';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'jhi-alert-error',
     template: `
-        <div class="alerts" role="alert">
-            <div *ngFor="let alert of alerts"  [ngClass]="{\'alert.position\': true, \'toast\': alert.toast}">
-                <ngb-alert *ngIf="alert && alert.type && alert.msg" [type]="alert.type" (close)="alert.close(alerts)">
-                    <pre [innerHTML]="alert.msg"></pre>
-                </ngb-alert>
-            </div>
+        <div *ngFor="let alert of alerts">
+            <td-message #message label="alert.msg" color="warn" icon="error">
+                <button td-message-actions md-icon-button (click)="message.close()"><md-icon>cancel</md-icon></button>
+            </td-message>
         </div>`
 })
 export class JhiAlertErrorComponent implements OnDestroy {
@@ -18,7 +17,7 @@ export class JhiAlertErrorComponent implements OnDestroy {
     alerts: any[];
     cleanHttpErrorListener: Subscription;
 
-    constructor(private alertService: JhiAlertService, private eventManager: JhiEventManager) {
+    constructor(private alertService: JhiAlertService, private eventManager: JhiEventManager, private translateService: TranslateService) {
         this.alerts = [];
 
         this.cleanHttpErrorListener = eventManager.subscribe('sampleApp.httpError', (response) => {

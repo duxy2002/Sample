@@ -102,5 +102,9 @@ jhipster:
 # More documentation is available at:
 # https://jhipster.github.io/common-application-properties/
 # ===================================================================
+jsf:
+    consumer:
+        token:
+            configExport: a5cc544d66cb4012d188225c71d61882
 
 application:

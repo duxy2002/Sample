@@ -1,31 +1,38 @@
-import {Component, AfterViewInit, OnInit, ChangeDetectorRef} from '@angular/core';
-import {Title} from '@angular/platform-browser';
-import {MdSnackBar} from '@angular/material';
+import { Component, AfterViewInit, OnInit, ChangeDetectorRef, OnDestroy } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { MdSnackBar } from '@angular/material';
 
-import {TdLoadingService, TdDialogService, TdMediaService} from '@covalent/core';
+import { TdLoadingService, TdDialogService, TdMediaService } from '@covalent/core';
 
-import 'rxjs/add/operator/toPromise';
 import { SNACK_BAR_SHOW_DURATION } from '../shared/index';
-import { JhiEventManager } from 'ng-jhipster';
-import {EVENT_ACTIVATE_CONFIG_ITEM} from "../shared/constants/event.constants";
+import { JhiEventManager, JhiAlertService } from 'ng-jhipster';
+import { EVENT_ACTIVATE_CONFIG_ITEM } from '../shared/constants/event.constants';
+import { ConfigManagementService } from './config-mgr.service';
+import { ResponseWrapper } from '../shared/model/response-wrapper.model';
+import { ResponseResult } from '../shared/model/response-result';
+import { ConfigMgrModel, ConfigStatus } from './config-mgr.model';
 
 @Component({
     selector: 'qs-users',
     templateUrl: './config-mgr.component.html',
     styleUrls: ['./config-mgr.component.scss'],
 })
-export class ConfigManagementComponent implements AfterViewInit, OnInit {
+export class ConfigManagementComponent implements AfterViewInit, OnInit, OnDestroy {
 
-    data: any[];
-    filteredData: any[];
+    data: ConfigMgrModel[];
+    filteredData: ConfigMgrModel[];
+    routeData: any;
+    alertErrorMessages: String[] = [];
 
     constructor(private _titleService: Title,
                 private _loadingService: TdLoadingService,
+                private alertService: JhiAlertService,
                 private eventManager: JhiEventManager,
                 private _dialogService: TdDialogService,
                 private _snackBarService: MdSnackBar,
                 private _changeDetectorRef: ChangeDetectorRef,
-                public media: TdMediaService) {
+                public media: TdMediaService,
+                public configManagementService: ConfigManagementService) {
     }
 
     ngOnInit(): void {
@@ -50,73 +57,46 @@ export class ConfigManagementComponent implements AfterViewInit, OnInit {
         this._changeDetectorRef.detectChanges();
     }
 
-    filterConfigs(displayName = ''): void {
-        this.filteredData = this.data.filter((config: any) => {
-            return config.displayName.toLowerCase().indexOf(displayName.toLowerCase()) > -1;
+    filterConfigs(typeName = ''): void {
+        this.filteredData = this.data.filter((config: ConfigMgrModel) => {
+            return config.typeName.toLowerCase().indexOf(typeName.toLowerCase()) > -1;
         });
+    }
+
+    ngOnDestroy() {
+        if (this.routeData) {
+            this.routeData.unsubscribe();
+        }
     }
 
     async load(): Promise<void> {
             this._loadingService.register('configs.list');
             // this.users = await this._userService.query().toPromise();
-            this.data = [
-                {
-                    'id': 52254,
-                    'typeId': '999',
-                    'displayName': '库房属性缩容配置',
-                    'memo': '2017-07-17 打开笛卡尔积',
-                    'user': 'liwanyang',
-                    'created': '09/04/2017 15:51:16',
-                    'lastAccess': '09/04/2017 15:51:28',
-                    'status': 'normal'
-                },
-                {
-                    'id': 52255,
-                    'typeId': '999',
-                    'displayName': '库房属性缩容配置',
-                    'memo': '2017-06-22 父单取消操作数量',
-                    'user': 'liwanyang',
-                    'created': '09/04/2017 15:48:04',
-                    'lastAccess': '09/04/2017 15:48:04',
-                    'status': 'deleted'
-                },
-                {
-                    'id': 52256,
-                    'typeId': '999',
-                    'displayName': '库房属性缩容配置',
-                    'memo': '2017-06-22 largeApplianceNotUseZt=0,使用在途，关闭笛卡尔积，pop服务获取订单通过库存',
-                    'user': 'liwanyang',
-                    'created': '07/17/2017 16:01:09',
-                    'lastAccess': '08/24/2017 16:03:36',
-                    'status': 'deleted'
-                },
-                {
-                    'id': 52257,
-                    'typeId': '999',
-                    'displayName': '库房属性缩容配置',
-                    'memo': '2017-06-22 父单取消操作数量',
-                    'user': 'liwanyang',
-                    'created': '07/17/2017 16:01:09',
-                    'lastAccess': '08/24/2017 16:03:36',
-                    'status': 'deleted'
-                },
-                {
-                    'id': 52258,
-                    'typeId': '999',
-                    'displayName': '库房属性缩容配置',
-                    'memo': '2017-06-22 父单取消操作数量',
-                    'user': 'liwanyang',
-                    'created': '07/17/2017 16:01:09',
-                    'lastAccess': '08/24/2017 16:03:36',
-                    'status': 'deleted'
-                }
-            ];
 
+        this.routeData = this.configManagementService.find(999).subscribe(
+            (res: ResponseWrapper) => this.onSuccess(res.json, res.headers),
+            (res: ResponseWrapper) => this.onError(res.json)
+        );
+    }
+
+    private onSuccess(result: ResponseResult, headers) {
+        if (result.success) {
+            this.data = result.data;
             this.filteredData = [];
             this.data.forEach((config: any) => {
                 this.filteredData.push(Object.assign({}, config));
             });
-            this._loadingService.resolve('configs.list');
+        } else {
+            this.alertErrorMessages = [];
+            let message = result.code + ' ' + result.message;
+            this.alertErrorMessages.push(message);
+        }
+        this._loadingService.resolve('configs.list');
+    }
+
+    private onError(error) {
+        this._loadingService.resolve('configs.list');
+        this.alertService.error(error.message, null, null);
     }
 
     activate(id: number, name: string): void {
@@ -127,30 +107,34 @@ export class ConfigManagementComponent implements AfterViewInit, OnInit {
                 acceptButton: '确认',
                 cancelButton: '取消'
             })
-            .afterClosed().toPromise().then((confirm: boolean) => {
-            if (confirm) {
+            .afterClosed().subscribe((accept: boolean) => {
+            if (accept) {
                 this._activate(id, name);
+            } else {
+                // DO SOMETHING ELSE
             }
         });
     }
-
+    public isInUsing(status: number): boolean {
+        return (status === ConfigStatus.IN_USING);
+    }
     private async _activate(id: number, name: string): Promise<void> {
         try {
 
             // await this._userService.delete(id).toPromise();
 
-            this.data.map((config: any) => {
+            this.data.map((config: ConfigMgrModel) => {
                 if (config.id === id) {
-                    config.status = 'normal';
-                } else if (config.status === 'normal') {
-                    config.status = 'deleted';
+                    config.yn = ConfigStatus.IN_USING;
+                } else if (config.yn === ConfigStatus.IN_USING) {
+                    config.yn = ConfigStatus.DELETED;
                 }
             });
-            this.filteredData.map((config: any) => {
+            this.filteredData.map((config: ConfigMgrModel) => {
                 if (config.id === id) {
-                    config.status = 'normal';
-                } else if (config.status === 'normal') {
-                    config.status = 'deleted';
+                    config.yn = ConfigStatus.IN_USING;
+                } else if (config.yn === ConfigStatus.IN_USING) {
+                    config.yn = ConfigStatus.DELETED;
                 }
             });
             // this._snackBarService.open('成功启用了配置项：' + name + ' !', null);

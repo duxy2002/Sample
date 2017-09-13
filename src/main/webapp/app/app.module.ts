@@ -40,9 +40,8 @@ export function getAPI(): string {
       ConfigManagementModule
   ], // modules needed to run this module
   providers: [
-      // customHttpProvider(),
+      customHttpProvider(),
       appRoutingProviders,
-      httpInterceptorProviders
   ], // additional providers needed for this module
   entryComponents: [ ],
   bootstrap: [ AppComponent ],

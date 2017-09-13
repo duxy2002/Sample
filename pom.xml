@@ -199,7 +199,6 @@
             <groupId>com.zaxxer</groupId>
             <artifactId>HikariCP</artifactId>
         </dependency>
-
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
@@ -358,6 +357,19 @@
             <artifactId>spring-security-data</artifactId>
         </dependency>
         <!-- jhipster-needle-maven-add-dependency -->
+
+        <!-- added by duxiaoyu 2017/09/13 begin -->
+        <dependency>
+            <groupId>com.jd.config.manager</groupId>
+            <artifactId>configManager-export</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jd</groupId>
+            <artifactId>jsf</artifactId>
+            <version>1.5.5</version>
+        </dependency>
+        <!-- added by duxiaoyu 2017/09/13 end -->
     </dependencies>
     <build>
         <defaultGoal>spring-boot:run</defaultGoal>
