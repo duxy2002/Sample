@@ -369,6 +369,13 @@
             <artifactId>jsf</artifactId>
             <version>1.5.5</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.jd.jdme</groupId>
+            <artifactId>jdme-mae-security</artifactId>
+            <version>2.2.0-SNAPSHOT</version>
+        </dependency>
+
         <!-- added by duxiaoyu 2017/09/13 end -->
     </dependencies>
     <build>

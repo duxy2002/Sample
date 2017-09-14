@@ -7,7 +7,7 @@ import { TranslateService } from '@ngx-translate/core';
     selector: 'jhi-alert-error',
     template: `
         <div *ngFor="let alert of alerts">
-            <td-message #message label="alert.msg" color="warn" icon="error">
+            <td-message #message [label]="alert.msg" color="warn" icon="error">
                 <button td-message-actions md-icon-button (click)="message.close()"><md-icon>cancel</md-icon></button>
             </td-message>
         </div>`
@@ -68,12 +68,27 @@ export class JhiAlertErrorComponent implements OnDestroy {
                 case 404:
                     this.addErrorAlert('Not found', 'error.url.not.found');
                     break;
-
+                // case 504:
+                //     this.addErrorAlert('', );
+                //     break;
                 default:
-                    if (httpResponse.text() !== '' && httpResponse.json() && httpResponse.json().message) {
-                        this.addErrorAlert(httpResponse.json().message);
+                    let text = '';
+                    let message = '';
+                    try {
+                        text = httpResponse.text();
+                    } catch (error) {
+                        text = '';
+                    }
+                    try {
+                        message = httpResponse.json().message;
+                    } catch (error) {
+                        message = '';
+                    }
+                    if (text !== '' && message !== '') {
+                    // if (httpResponse.text() !== '' && httpResponse.json() && httpResponse.json().message) {
+                        this.addErrorAlert(message);
                     } else {
-                        this.addErrorAlert(httpResponse.text());
+                        this.addErrorAlert(text);
                     }
             }
         });

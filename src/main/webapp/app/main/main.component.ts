@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'qs-main',
+  selector: 'stock-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss'],
 })
@@ -10,7 +10,7 @@ export class MainComponent {
 
   routes: Object[] = [{
       title: '配置项管理',
-      route: '/',
+      route: '/home/config',
       icon: 'settings_applications',
     },
     //   {

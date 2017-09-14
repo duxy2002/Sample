@@ -104,7 +104,8 @@ jhipster:
 # ===================================================================
 jsf:
     consumer:
-        token:
-            configExport: a5cc544d66cb4012d188225c71d61882
-
+        configExport:
+            token:
+                authority: a5cc544d66cb4012d188225c71d61882
+            typeId:  998,999
 application:

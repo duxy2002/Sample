@@ -11,6 +11,7 @@ import {
     StateStorageService,
     Principal,
     HasAnyAuthorityDirective,
+    TypeUtils,
 } from './';
 
 @NgModule({
@@ -28,12 +29,13 @@ import {
         CSRFService,
         AuthServerProvider,
         UserService,
-        DatePipe
+        DatePipe,
+        TypeUtils
     ],
     exports: [
         SampleSharedCommonModule,
         HasAnyAuthorityDirective,
-        DatePipe
+        DatePipe,
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 

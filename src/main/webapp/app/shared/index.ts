@@ -19,6 +19,7 @@ export * from './model/request-util';
 export * from './model/base-entity';
 export * from './model/entity-store.service';
 export * from './model/response-result';
+export * from './utils/type-utils';
 export * from './shared-libs.module';
 export * from './shared-common.module';
 export * from './shared.module';

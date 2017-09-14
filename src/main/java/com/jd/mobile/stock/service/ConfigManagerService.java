@@ -3,7 +3,14 @@ package com.jd.mobile.stock.service;
 import com.jd.config.manager.domain.ConfigDB;
 import com.jd.config.manager.export.result.Result;
 
+import java.util.List;
+
 public interface ConfigManagerService {
+
+    /**
+     * 得到所有的typeId
+     */
+    List<Integer> getAllTypeId();
 
     /**
      * 根据typeId获取配置列表,没有返回xml数据
