@@ -7,6 +7,7 @@ import { ResponseWrapper, createRequestOption } from '../../shared';
 import { JhiDateUtils } from 'ng-jhipster';
 import { ResponseResult } from '../../shared/model/response-result';
 import { TypeUtils } from '../../shared/utils/type-utils';
+import * as moment from 'moment';
 
 @Injectable()
 export class ConfigService {
@@ -58,10 +59,12 @@ export class ConfigService {
     }
 
     private convertItemFromServer(entity: ConfigDBModel) {
-        entity.updateTime = this.dateUtils
-            .convertDateTimeFromServer(entity.updateTime);
-        entity.createTime = this.dateUtils
-            .convertDateTimeFromServer(entity.createTime);
+        entity.updateTime = moment(entity.updateTime).toDate();
+        entity.createTime = moment(entity.createTime).toDate();
+        // entity.updateTime = this.dateUtils
+        //     .convertDateTimeFromServer(entity.updateTime);
+        // entity.createTime = this.dateUtils
+        //     .convertDateTimeFromServer(entity.createTime);
     }
 
     private convert(entity: ConfigDBModel): ConfigDBModel {

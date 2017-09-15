@@ -1,10 +1,10 @@
-import {Component, AfterViewInit, OnInit, ChangeDetectorRef, OnDestroy} from '@angular/core';
+import { Component, AfterViewInit, OnInit, ChangeDetectorRef, OnDestroy} from '@angular/core';
 import {Title} from '@angular/platform-browser';
 import {MdSnackBar} from '@angular/material';
 import {Router, ActivatedRouteSnapshot, ActivatedRoute} from '@angular/router';
 import {TdLoadingService, TdDialogService, TdMediaService} from '@covalent/core';
 
-import {SNACK_BAR_SHOW_DURATION} from '../../shared/index';
+import { SNACK_BAR_SHOW_DURATION, OPERATION_CODE } from '../../shared/index';
 import {JhiEventManager, JhiAlertService} from 'ng-jhipster';
 import {ConfigService} from './config.service';
 import {ResponseWrapper} from '../../shared/model/response-wrapper.model';
@@ -12,8 +12,8 @@ import {ResponseResult} from '../../shared/model/response-result';
 import {ConfigDBModel, ConfigDBStatus} from './config.model';
 import {Subscription} from 'rxjs/Rx';
 import {TypeUtils} from '../../shared/utils/type-utils';
-import {Observable} from 'rxjs/Observable';
 import {ConfigManagementService} from '../config-mgr.service';
+import { ViewContainerRef } from '@angular/core';
 
 @Component({
     selector: 'config',
@@ -43,7 +43,8 @@ export class ConfigComponent implements AfterViewInit, OnInit, OnDestroy {
                 private media: TdMediaService,
                 private configService: ConfigService,
                 private configManagementService: ConfigManagementService,
-                private typeUtils: TypeUtils) {
+                private typeUtils: TypeUtils,
+                private _viewContainerRef: ViewContainerRef) {
     }
 
     ngOnInit(): void {
@@ -92,7 +93,8 @@ export class ConfigComponent implements AfterViewInit, OnInit, OnDestroy {
     filterConfigs(typeName = ''): void {
         this.searchTerm = typeName;
         this.filteredData = this.data.filter((config: ConfigDBModel) => {
-            return config.typeName.toLowerCase().indexOf(typeName.toLowerCase()) > -1;
+            return ((config.typeName.toLowerCase().indexOf(typeName.toLowerCase()) > -1 ) || (
+                config.remark.toLowerCase().indexOf(typeName.toLowerCase()) > -1));
         });
     }
 
@@ -146,20 +148,36 @@ export class ConfigComponent implements AfterViewInit, OnInit, OnDestroy {
     }
 
     activate(config: ConfigDBModel): void {
-        this._dialogService
-            .openConfirm({
-                message: '您想使用该配置项: ' + config.typeName + '吗?',
-                title: '基础服务组平台',
-                acceptButton: '确认',
-                cancelButton: '取消'
-            })
-            .afterClosed().subscribe((accept: boolean) => {
-            if (accept) {
-                this._activate(config);
+        this._dialogService.openPrompt({
+            message: '请输入操作码：',
+            disableClose:  true, // defaults to false
+            viewContainerRef: this._viewContainerRef, // OPTIONAL
+            title: '基础服务组平台', // OPTIONAL, hides if not provided
+            value: '', // OPTIONAL
+            cancelButton: '取消', // OPTIONAL, defaults to 'CANCEL'
+            acceptButton: '确认', // OPTIONAL, defaults to 'ACCEPT'
+        }).afterClosed().subscribe((newValue: string) => {
+            if (newValue) {
+                if (newValue === OPERATION_CODE) {
+                    this._dialogService.openConfirm({
+                            message: '您想使用该配置项: ' + config.typeName + '吗?',
+                            title: '基础服务组平台',
+                            acceptButton: '确认',
+                            cancelButton: '取消'
+                        })
+                        .afterClosed().subscribe((accept: boolean) => {
+                        if (accept) {
+                            this._activate(config);
+                        } else {
+                            // DO SOMETHING ELSE
+                        }
+                    });
+                }
             } else {
                 // DO SOMETHING ELSE
             }
         });
+
     }
 
     public isInUsing(status: number): boolean {

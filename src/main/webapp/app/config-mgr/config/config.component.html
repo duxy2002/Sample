@@ -24,14 +24,13 @@
                         </md-icon>
                         <h3 md-line> {{config.typeId}} {{config.typeName}} </h3>
                         <p md-line> {{config.remark}} </p>
-                        <p md-line hide-gt-md class="md-caption"> {{ config.updateTime | timeAgo }} </p>
+                        <p md-line hide-gt-md class="md-caption"> {{ config.operator  }}  {{ config.updateTime | timeAgo }} </p>
                         <span flex></span>
                         <span hide-xs hide-sm hide-md flex-gt-xs="60" flex-xs="40" layout-gt-xs="row">
                               <div class="md-caption tc-grey-500" flex-gt-xs="50">
-                                  {{ config.createTime  }}
+                                  {{ config.operator  }}
                               </div>
-                              <div class="md-caption tc-grey-500"
-                                   flex-gt-xs="50"> {{ config.updateTime  }} </div>
+                              <div class="md-caption tc-grey-500" flex-gt-xs="50"> {{ config.updateTime | timeAgo  }} </div>
                             </span>
                         <span [style.visibility]="isInUsing(config.yn) ? 'hidden' : 'visible' ">
                                   <button md-icon-button (click)="activate(config)">
