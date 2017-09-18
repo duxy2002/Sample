@@ -10,10 +10,10 @@
     </parent>
 
     <groupId>com.jd.mobile.stock</groupId>
-    <artifactId>sample</artifactId>
+    <artifactId>stockApp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>Sample</name>
+    <name>StockApp</name>
 
     <properties>
         <argLine>-Djava.security.egd=file:/dev/./urandom -Xmx256m</argLine>
