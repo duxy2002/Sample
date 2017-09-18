@@ -13,7 +13,7 @@
                   <!--protocol="jsf" alias="CHANGE-IT" timeout="10000" retries="0">-->
     <!--</jsf:consumer>-->
 
-    <jsf:consumer id="configExport" interface="com.jd.config.manager.export.ConfigExport"  protocol="jsf" alias="config-test" timeout="1000" >
+    <jsf:consumer id="configExport" interface="com.jd.config.manager.export.ConfigExport"  protocol="jsf" alias="config-test" timeout="1000" retries="3">
         <jsf:parameter key="token" value="837d8a6473195b8b5e85d58a72cb9c7e" hide="true"/>
     </jsf:consumer>
 </beans>

@@ -185,20 +185,20 @@
             <artifactId>springfox-bean-validators</artifactId>
             <version>${springfox.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.mattbertolini</groupId>
-            <artifactId>liquibase-slf4j</artifactId>
-            <version>${liquibase-slf4j.version}</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.mattbertolini</groupId>-->
+            <!--<artifactId>liquibase-slf4j</artifactId>-->
+            <!--<version>${liquibase-slf4j.version}</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>com.ryantenney.metrics</groupId>
             <artifactId>metrics-spring</artifactId>
             <version>${metrics-spring.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.zaxxer</groupId>
-            <artifactId>HikariCP</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.zaxxer</groupId>-->
+            <!--<artifactId>HikariCP</artifactId>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
@@ -224,10 +224,10 @@
             <groupId>javax.cache</groupId>
             <artifactId>cache-api</artifactId>
         </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>mysql</groupId>-->
+            <!--<artifactId>mysql-connector-java</artifactId>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
@@ -237,23 +237,23 @@
             <groupId>org.ehcache</groupId>
             <artifactId>ehcache</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-jcache</artifactId>
-            <version>${hibernate.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-envers</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.hibernate</groupId>-->
+            <!--<artifactId>hibernate-jcache</artifactId>-->
+            <!--<version>${hibernate.version}</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.hibernate</groupId>-->
+            <!--<artifactId>hibernate-envers</artifactId>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.liquibase</groupId>
-            <artifactId>liquibase-core</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.liquibase</groupId>-->
+            <!--<artifactId>liquibase-core</artifactId>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct-jdk8</artifactId>
@@ -298,10 +298,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-logging</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-mail</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-mail</artifactId>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
@@ -347,10 +347,10 @@
             <artifactId>logstash-logback-encoder</artifactId>
             <version>${logstash-logback-encoder.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-cloud-connectors</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-cloud-connectors</artifactId>-->
+        <!--</dependency>-->
         <!-- security -->
         <dependency>
             <groupId>org.springframework.security</groupId>
@@ -381,33 +381,33 @@
     <build>
         <defaultGoal>spring-boot:run</defaultGoal>
         <plugins>
-            <plugin>
-                <groupId>io.gatling</groupId>
-                <artifactId>gatling-maven-plugin</artifactId>
-                <version>${gatling-maven-plugin.version}</version>
-                <configuration>
-                    <configFolder>src/test/gatling/conf</configFolder>
-                    <dataFolder>src/test/gatling/user-files/data</dataFolder>
-                    <resultsFolder>target/gatling/results/${maven.build.timestamp}/</resultsFolder>
-                    <bodiesFolder>src/test/gatling/user-files/bodies</bodiesFolder>
-                    <simulationsFolder>src/test/gatling/user-files/simulations</simulationsFolder>
-                    <!-- If uncommented, these arguments below will be applied to all your gatling tests -->
-                    <!--<jvmArgs>
-                        <jvmArg>-Dusers=100</jvmArg>
-                        <jvmArg>-Dramp=1</jvmArg>
-                    </jvmArgs>-->
-                    <!--
-                    This will run multiple simulations one by one. Useful when doing Gatling
-                    tests in CI.
-                    -->
-                    <runMultipleSimulations>true</runMultipleSimulations>
-                    <!--
-                    To run only one simulation, you need to disable the "runMultipleSimulations"
-                    above, and write the name of your simulation below.
-                    -->
-                    <!--<simulationClass>WriteTheNameOfYourGatlingSimulation</simulationClass>-->
-                </configuration>
-            </plugin>
+            <!--<plugin>-->
+                <!--<groupId>io.gatling</groupId>-->
+                <!--<artifactId>gatling-maven-plugin</artifactId>-->
+                <!--<version>${gatling-maven-plugin.version}</version>-->
+                <!--<configuration>-->
+                    <!--<configFolder>src/test/gatling/conf</configFolder>-->
+                    <!--<dataFolder>src/test/gatling/user-files/data</dataFolder>-->
+                    <!--<resultsFolder>target/gatling/results/${maven.build.timestamp}/</resultsFolder>-->
+                    <!--<bodiesFolder>src/test/gatling/user-files/bodies</bodiesFolder>-->
+                    <!--<simulationsFolder>src/test/gatling/user-files/simulations</simulationsFolder>-->
+                    <!--&lt;!&ndash; If uncommented, these arguments below will be applied to all your gatling tests &ndash;&gt;-->
+                    <!--&lt;!&ndash;<jvmArgs>-->
+                        <!--<jvmArg>-Dusers=100</jvmArg>-->
+                        <!--<jvmArg>-Dramp=1</jvmArg>-->
+                    <!--</jvmArgs>&ndash;&gt;-->
+                    <!--&lt;!&ndash;-->
+                    <!--This will run multiple simulations one by one. Useful when doing Gatling-->
+                    <!--tests in CI.-->
+                    <!--&ndash;&gt;-->
+                    <!--<runMultipleSimulations>true</runMultipleSimulations>-->
+                    <!--&lt;!&ndash;-->
+                    <!--To run only one simulation, you need to disable the "runMultipleSimulations"-->
+                    <!--above, and write the name of your simulation below.-->
+                    <!--&ndash;&gt;-->
+                    <!--&lt;!&ndash;<simulationClass>WriteTheNameOfYourGatlingSimulation</simulationClass>&ndash;&gt;-->
+                <!--</configuration>-->
+            <!--</plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -420,11 +420,11 @@
                             <version>${mapstruct.version}</version>
                         </path>
                         <!-- For JPA static metamodel generation -->
-                        <path>
-                            <groupId>org.hibernate</groupId>
-                            <artifactId>hibernate-jpamodelgen</artifactId>
-                            <version>${hibernate.version}</version>
-                        </path>
+                        <!--<path>-->
+                            <!--<groupId>org.hibernate</groupId>-->
+                            <!--<artifactId>hibernate-jpamodelgen</artifactId>-->
+                            <!--<version>${hibernate.version}</version>-->
+                        <!--</path>-->
 
                     </annotationProcessorPaths>
                 </configuration>
@@ -453,6 +453,7 @@
                     <rules>
                         <requireMavenVersion>
                             <message>You are running an older version of Maven. JHipster requires at least Maven ${maven.version}</message>
+                            <!-- maven的版本必须和下面定义的一致，否则显示上面的错误信息。 -->
                             <version>[${maven.version},)</version>
                         </requireMavenVersion>
                         <requireJavaVersion>
@@ -501,87 +502,87 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <configuration>
-                    <!-- Force alphabetical order to have a reproducible build -->
-                    <runOrder>alphabetical</runOrder>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>${jacoco-maven-plugin.version}</version>
-                <executions>
-                    <execution>
-                        <id>pre-unit-tests</id>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                        <configuration>
-                            <!-- Sets the path to the file which contains the execution data. -->
-                            <destFile>${project.testresult.directory}/coverage/jacoco/jacoco.exec</destFile>
-                        </configuration>
-                    </execution>
-                    <!-- Ensures that the code coverage report for unit tests is created after unit tests have been run -->
-                    <execution>
-                        <id>post-unit-test</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                        <configuration>
-                            <dataFile>${project.testresult.directory}/coverage/jacoco/jacoco.exec</dataFile>
-                            <outputDirectory>${project.testresult.directory}/coverage/jacoco</outputDirectory>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-surefire-plugin</artifactId>-->
+                <!--<configuration>-->
+                    <!--&lt;!&ndash; Force alphabetical order to have a reproducible build &ndash;&gt;-->
+                    <!--<runOrder>alphabetical</runOrder>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
+            <!--<plugin>-->
+                <!--<groupId>org.jacoco</groupId>-->
+                <!--<artifactId>jacoco-maven-plugin</artifactId>-->
+                <!--<version>${jacoco-maven-plugin.version}</version>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>pre-unit-tests</id>-->
+                        <!--<goals>-->
+                            <!--<goal>prepare-agent</goal>-->
+                        <!--</goals>-->
+                        <!--<configuration>-->
+                            <!--&lt;!&ndash; Sets the path to the file which contains the execution data. &ndash;&gt;-->
+                            <!--<destFile>${project.testresult.directory}/coverage/jacoco/jacoco.exec</destFile>-->
+                        <!--</configuration>-->
+                    <!--</execution>-->
+                    <!--&lt;!&ndash; Ensures that the code coverage report for unit tests is created after unit tests have been run &ndash;&gt;-->
+                    <!--<execution>-->
+                        <!--<id>post-unit-test</id>-->
+                        <!--<phase>test</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>report</goal>-->
+                        <!--</goals>-->
+                        <!--<configuration>-->
+                            <!--<dataFile>${project.testresult.directory}/coverage/jacoco/jacoco.exec</dataFile>-->
+                            <!--<outputDirectory>${project.testresult.directory}/coverage/jacoco</outputDirectory>-->
+                        <!--</configuration>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
             <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
                 <version>${sonar-maven-plugin.version}</version>
             </plugin>
-            <plugin>
-                <groupId>org.liquibase</groupId>
-                <artifactId>liquibase-maven-plugin</artifactId>
-                <version>${liquibase.version}</version>
-                <configuration>
-                    <changeLogFile>src/main/resources/config/liquibase/master.xml</changeLogFile>
-                    <diffChangeLogFile>src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
-                    <driver>org.h2.Driver</driver>
-                    <url>jdbc:h2:file:./target/h2db/db/sample</url>
-                    <defaultSchemaName></defaultSchemaName>
-                    <username>sample</username>
-                    <password></password>
-                    <referenceUrl>hibernate:spring:com.jd.mobile.stock.domain?dialect=org.hibernate.dialect.H2Dialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
-                    <verbose>true</verbose>
-                    <logging>debug</logging>
-                </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.javassist</groupId>
-                        <artifactId>javassist</artifactId>
-                        <version>${javassist.version}</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.liquibase.ext</groupId>
-                        <artifactId>liquibase-hibernate5</artifactId>
-                        <version>${liquibase-hibernate5.version}</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.springframework.boot</groupId>
-                        <artifactId>spring-boot-starter-data-jpa</artifactId>
-                        <version>${project.parent.version}</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>javax.validation</groupId>
-                        <artifactId>validation-api</artifactId>
-                        <version>${validation-api.version}</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
+            <!--<plugin>-->
+                <!--<groupId>org.liquibase</groupId>-->
+                <!--<artifactId>liquibase-maven-plugin</artifactId>-->
+                <!--<version>${liquibase.version}</version>-->
+                <!--<configuration>-->
+                    <!--<changeLogFile>src/main/resources/config/liquibase/master.xml</changeLogFile>-->
+                    <!--<diffChangeLogFile>src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>-->
+                    <!--<driver>org.h2.Driver</driver>-->
+                    <!--<url>jdbc:h2:file:./target/h2db/db/sample</url>-->
+                    <!--<defaultSchemaName></defaultSchemaName>-->
+                    <!--<username>sample</username>-->
+                    <!--<password></password>-->
+                    <!--<referenceUrl>hibernate:spring:com.jd.mobile.stock.domain?dialect=org.hibernate.dialect.H2Dialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>-->
+                    <!--<verbose>true</verbose>-->
+                    <!--<logging>debug</logging>-->
+                <!--</configuration>-->
+                <!--<dependencies>-->
+                    <!--<dependency>-->
+                        <!--<groupId>org.javassist</groupId>-->
+                        <!--<artifactId>javassist</artifactId>-->
+                        <!--<version>${javassist.version}</version>-->
+                    <!--</dependency>-->
+                    <!--<dependency>-->
+                        <!--<groupId>org.liquibase.ext</groupId>-->
+                        <!--<artifactId>liquibase-hibernate5</artifactId>-->
+                        <!--<version>${liquibase-hibernate5.version}</version>-->
+                    <!--</dependency>-->
+                    <!--<dependency>-->
+                        <!--<groupId>org.springframework.boot</groupId>-->
+                        <!--<artifactId>spring-boot-starter-data-jpa</artifactId>-->
+                        <!--<version>${project.parent.version}</version>-->
+                    <!--</dependency>-->
+                    <!--<dependency>-->
+                        <!--<groupId>javax.validation</groupId>-->
+                        <!--<artifactId>validation-api</artifactId>-->
+                        <!--<version>${validation-api.version}</version>-->
+                    <!--</dependency>-->
+                <!--</dependencies>-->
+            <!--</plugin>-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -594,22 +595,22 @@
                     -->
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>com.spotify</groupId>
-                <artifactId>docker-maven-plugin</artifactId>
-                <version>${docker-maven-plugin.version}</version>
-                <configuration>
-                    <imageName>sample</imageName>
-                    <dockerDirectory>src/main/docker</dockerDirectory>
-                    <resources>
-                        <resource>
-                            <targetPath>/</targetPath>
-                            <directory>${project.build.directory}</directory>
-                            <include>${project.build.finalName}.war</include>
-                        </resource>
-                    </resources>
-                </configuration>
-            </plugin>
+            <!--<plugin>-->
+                <!--<groupId>com.spotify</groupId>-->
+                <!--<artifactId>docker-maven-plugin</artifactId>-->
+                <!--<version>${docker-maven-plugin.version}</version>-->
+                <!--<configuration>-->
+                    <!--<imageName>sample</imageName>-->
+                    <!--<dockerDirectory>src/main/docker</dockerDirectory>-->
+                    <!--<resources>-->
+                        <!--<resource>-->
+                            <!--<targetPath>/</targetPath>-->
+                            <!--<directory>${project.build.directory}</directory>-->
+                            <!--<include>${project.build.finalName}.war</include>-->
+                        <!--</resource>-->
+                    <!--</resources>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
             <!-- jhipster-needle-maven-add-plugin -->
         </plugins>
         <pluginManagement>
@@ -626,23 +627,23 @@
                     <configuration>
                         <lifecycleMappingMetadata>
                             <pluginExecutions>
-                                <pluginExecution>
-                                    <pluginExecutionFilter>
-                                        <groupId>org.jacoco</groupId>
-                                        <artifactId>
-                                            jacoco-maven-plugin
-                                        </artifactId>
-                                        <versionRange>
-                                            ${jacoco-maven-plugin.version}
-                                        </versionRange>
-                                        <goals>
-                                            <goal>prepare-agent</goal>
-                                        </goals>
-                                    </pluginExecutionFilter>
-                                    <action>
-                                        <ignore/>
-                                    </action>
-                                </pluginExecution>
+                                <!--<pluginExecution>-->
+                                    <!--<pluginExecutionFilter>-->
+                                        <!--<groupId>org.jacoco</groupId>-->
+                                        <!--<artifactId>-->
+                                            <!--jacoco-maven-plugin-->
+                                        <!--</artifactId>-->
+                                        <!--<versionRange>-->
+                                            <!--${jacoco-maven-plugin.version}-->
+                                        <!--</versionRange>-->
+                                        <!--<goals>-->
+                                            <!--<goal>prepare-agent</goal>-->
+                                        <!--</goals>-->
+                                    <!--</pluginExecutionFilter>-->
+                                    <!--<action>-->
+                                        <!--<ignore/>-->
+                                    <!--</action>-->
+                                <!--</pluginExecution>-->
                                 <pluginExecution>
                                     <pluginExecutionFilter>
                                         <groupId>com.github.eirslett</groupId>

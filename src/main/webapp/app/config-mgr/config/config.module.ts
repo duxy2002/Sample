@@ -14,7 +14,7 @@ import { CovalentLoadingModule, CovalentDialogsModule, CovalentMediaModule, Cova
 import { ConfigComponent } from './config.component';
 
 import { ConfigService } from './config.service';
-import { SampleSharedModule } from '../../shared/shared.module';
+import { StockSharedModule } from '../../shared/shared.module';
 import { ConfigManagementService } from '../config-mgr.service';
 
 @NgModule({
@@ -47,7 +47,7 @@ import { ConfigManagementService } from '../config-mgr.service';
         CovalentSearchModule,
         CovalentCommonModule,
         // extra
-        SampleSharedModule
+        StockSharedModule
     ], // modules needed to run this module
     providers: [
         ConfigService,

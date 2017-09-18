@@ -2,8 +2,8 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { DatePipe } from '@angular/common';
 
 import {
-    SampleSharedLibsModule,
-    SampleSharedCommonModule,
+    StockSharedLibsModule,
+    StockSharedCommonModule,
     CSRFService,
     AuthServerProvider,
     AccountService,
@@ -16,8 +16,8 @@ import {
 
 @NgModule({
     imports: [
-        SampleSharedLibsModule,
-        SampleSharedCommonModule
+        StockSharedLibsModule,
+        StockSharedCommonModule
     ],
     declarations: [
         HasAnyAuthorityDirective
@@ -33,11 +33,11 @@ import {
         TypeUtils
     ],
     exports: [
-        SampleSharedCommonModule,
+        StockSharedCommonModule,
         HasAnyAuthorityDirective,
         DatePipe,
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 
 })
-export class SampleSharedModule {}
+export class StockSharedModule {}

@@ -103,4 +103,4 @@ import { CookieModule } from 'ngx-cookie';
         CovalentSearchModule,
     ]
 })
-export class SampleSharedLibsModule {}
+export class StockSharedLibsModule {}

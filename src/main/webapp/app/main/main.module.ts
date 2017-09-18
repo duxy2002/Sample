@@ -1,7 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MdDatepickerModule } from '@angular/material';
 
-import { SampleSharedModule } from '../shared';
+import { StockSharedModule } from '../shared';
 import { TdLoadingService } from '@covalent/core';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 
@@ -11,7 +11,7 @@ import {
 
 @NgModule({
     imports: [
-        SampleSharedModule,
+        StockSharedModule,
         NgxChartsModule,
         MdDatepickerModule,
     ],

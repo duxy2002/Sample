@@ -9,7 +9,7 @@ import { CovalentMarkdownModule } from '@covalent/markdown';
 import { AppComponent } from './app.component';
 import { appRoutes, appRoutingProviders } from './app.route';
 
-import { SampleSharedModule } from './shared/shared.module';
+import { StockSharedModule } from './shared/shared.module';
 import { Ng2Webstorage } from 'ng2-webstorage';
 import { customHttpProvider } from './blocks/interceptor/http.provider';
 import { ConfigManagementModule } from './config-mgr/config-mgr.module';
@@ -34,7 +34,7 @@ export function getAPI(): string {
     BrowserModule,
     BrowserAnimationsModule,
       Ng2Webstorage.forRoot({ prefix: 'jhi', separator: '-'}),
-      SampleSharedModule,
+      StockSharedModule,
     CovalentHighlightModule,
     CovalentMarkdownModule,
       ConfigManagementModule,

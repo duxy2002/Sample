@@ -2,7 +2,7 @@ import { NgModule, LOCALE_ID } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 import {
-    SampleSharedLibsModule,
+    StockSharedLibsModule,
     JhiAlertComponent,
     JhiAlertErrorComponent,
 } from './';
@@ -14,7 +14,7 @@ import {
 } from '@covalent/core';
 @NgModule({
     imports: [
-        SampleSharedLibsModule
+        StockSharedLibsModule
     ],
     declarations: [
         JhiAlertComponent,
@@ -32,9 +32,9 @@ import {
         TdDigitsPipe
     ],
     exports: [
-        SampleSharedLibsModule,
+        StockSharedLibsModule,
         JhiAlertComponent,
         JhiAlertErrorComponent
     ]
 })
-export class SampleSharedCommonModule {}
+export class StockSharedCommonModule {}
